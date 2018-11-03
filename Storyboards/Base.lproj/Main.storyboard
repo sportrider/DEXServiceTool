@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DEXServiceTool" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="DEXServiceTool" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -66,6 +66,9 @@
                                 <state key="normal" title="LOGIN">
                                     <color key="titleColor" red="0.11771451588771298" green="0.17976587811386235" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <action selector="didTapLoginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cpI-B6-gDX"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Igy-vC-dGE">
                                 <rect key="frame" x="267" y="582" width="300" height="40"/>
@@ -100,10 +103,110 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="E0L-3h-CnQ"/>
+                    <connections>
+                        <outlet property="loginBtn" destination="gVx-uP-bhi" id="Sen-lg-b0o"/>
+                        <outlet property="pswdTxt" destination="0KA-46-Hy5" id="pvI-XI-nnu"/>
+                        <outlet property="userNameTxt" destination="Igy-vC-dGE" id="rWv-Ds-YUM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="766.9064748201439" y="271.94244604316549"/>
+            <point key="canvasLocation" x="-90" y="-737"/>
+        </scene>
+        <!--Item 2-->
+        <scene sceneID="VfD-BT-AE5">
+            <objects>
+                <viewController id="Gn7-RT-IHx" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gRr-St-mxv">
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="8Za-k8-jpo"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="1qv-Qg-Hxo"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K5R-rt-fUO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1436" y="273"/>
+        </scene>
+        <!--Item 1-->
+        <scene sceneID="YhU-6h-oVx">
+            <objects>
+                <viewController id="bM6-T9-6o5" customClass="HomeScreenViewController" customModule="DEXServiceTool" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GBu-gO-i5w">
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZDe-5f-8O3">
+                                <rect key="frame" x="20" y="40" width="794" height="1002"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DexTitle.png" translatesAutoresizingMaskIntoConstraints="NO" id="eGy-BA-zDw">
+                                        <rect key="frame" x="166" y="6" width="462" height="300"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="462" id="PXS-bL-vU9"/>
+                                            <constraint firstAttribute="height" constant="300" id="Vgr-Yl-Ehg"/>
+                                        </constraints>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y5P-jO-VgA">
+                                        <rect key="frame" x="20" y="326" width="754" height="656"/>
+                                        <color key="backgroundColor" red="0.76979106659999996" green="0.83057463170000001" blue="0.89412093159999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Device Configuration" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gF4-kD-8th">
+                                        <rect key="frame" x="150.5" y="326" width="505" height="62"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="505" id="8UQ-Rq-GxG"/>
+                                            <constraint firstAttribute="height" constant="62" id="lv5-4y-0iU"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="33"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.42696729300000003" green="0.55870223050000001" blue="0.7098200321" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="y5P-jO-VgA" secondAttribute="trailing" constant="20" id="9cq-RV-ts9"/>
+                                    <constraint firstItem="y5P-jO-VgA" firstAttribute="leading" secondItem="ZDe-5f-8O3" secondAttribute="leading" constant="20" id="AqC-K8-Kme"/>
+                                    <constraint firstItem="eGy-BA-zDw" firstAttribute="centerX" secondItem="ZDe-5f-8O3" secondAttribute="centerX" id="Bij-K5-YVZ"/>
+                                    <constraint firstItem="eGy-BA-zDw" firstAttribute="top" secondItem="ZDe-5f-8O3" secondAttribute="top" constant="6" id="J0f-e8-mR9"/>
+                                    <constraint firstAttribute="bottom" secondItem="y5P-jO-VgA" secondAttribute="bottom" constant="20" id="POj-RM-n7g"/>
+                                    <constraint firstItem="gF4-kD-8th" firstAttribute="top" secondItem="y5P-jO-VgA" secondAttribute="top" id="XQ4-ch-4jk"/>
+                                    <constraint firstItem="y5P-jO-VgA" firstAttribute="top" secondItem="eGy-BA-zDw" secondAttribute="bottom" constant="20" id="e1J-ay-aIR"/>
+                                    <constraint firstItem="gF4-kD-8th" firstAttribute="centerX" secondItem="ZDe-5f-8O3" secondAttribute="centerX" constant="6" id="jxg-RX-aj6"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="jI3-EE-ir7" firstAttribute="bottom" secondItem="ZDe-5f-8O3" secondAttribute="bottom" constant="20" id="8IQ-t7-aVH"/>
+                            <constraint firstItem="jI3-EE-ir7" firstAttribute="trailing" secondItem="ZDe-5f-8O3" secondAttribute="trailing" constant="20" id="LvL-ac-iEK"/>
+                            <constraint firstItem="ZDe-5f-8O3" firstAttribute="top" secondItem="jI3-EE-ir7" secondAttribute="top" constant="20" id="UeU-wV-pEi"/>
+                            <constraint firstItem="ZDe-5f-8O3" firstAttribute="leading" secondItem="jI3-EE-ir7" secondAttribute="leading" constant="20" id="edU-NB-7DX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jI3-EE-ir7"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="TcR-uk-VF5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3to-Cd-xY7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1436" y="-367"/>
+        </scene>
+        <!--Main Tab Bar View Controller-->
+        <scene sceneID="tVJ-aC-Z19">
+            <objects>
+                <tabBarController storyboardIdentifier="IDMainTabBarViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="aIq-jw-6bH" customClass="MainTabBarViewController" customModule="DEXServiceTool" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ueu-Ys-1eC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="bM6-T9-6o5" kind="relationship" relationship="viewControllers" id="DHY-6n-g6A"/>
+                        <segue destination="Gn7-RT-IHx" kind="relationship" relationship="viewControllers" id="nX8-bs-Cqm"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CrX-DV-HqQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="678" y="-46"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="KtF-im-38U">
@@ -121,7 +224,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p1D-vD-EIR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1" y="272"/>
+            <point key="canvasLocation" x="-1063" y="-367"/>
         </scene>
     </scenes>
     <resources>

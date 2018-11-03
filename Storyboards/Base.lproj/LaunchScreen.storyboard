@@ -18,13 +18,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DexTitle.png" translatesAutoresizingMaskIntoConstraints="NO" id="Arm-7a-e9Z">
-                                <rect key="frame" x="186" y="406" width="462" height="300"/>
+                                <rect key="frame" x="186" y="180" width="462" height="300"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.42696729302406311" green="0.55870223045349121" blue="0.70982003211975098" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="Arm-7a-e9Z" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="ApO-sb-hzf"/>
-                            <constraint firstItem="Arm-7a-e9Z" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="kDp-w5-s49"/>
+                            <constraint firstItem="Arm-7a-e9Z" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="160" id="Gs2-rr-GAS"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
