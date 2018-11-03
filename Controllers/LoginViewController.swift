@@ -10,8 +10,8 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
-    @IBOutlet weak var userNameTxt: UITextField!
-    @IBOutlet weak var pswdTxt: UITextField!
+    @IBOutlet weak var userNameTxt: RoundedTextField!
+    @IBOutlet weak var pswdTxt: RoundedTextField!
     @IBOutlet weak var loginBtn: UIButton!
     
     
