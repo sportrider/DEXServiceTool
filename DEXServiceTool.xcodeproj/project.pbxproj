@@ -15,6 +15,7 @@
 		380B2593218DDEEB00C5305C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 380B2591218DDEEB00C5305C /* LaunchScreen.storyboard */; };
 		380B259E218DDEEC00C5305C /* DEXServiceToolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380B259D218DDEEC00C5305C /* DEXServiceToolTests.swift */; };
 		380B25A9218DDEEC00C5305C /* DEXServiceToolUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380B25A8218DDEEC00C5305C /* DEXServiceToolUITests.swift */; };
+		380B25B8218DE0D200C5305C /* DexTitle.png in Resources */ = {isa = PBXBuildFile; fileRef = 380B25B7218DE0D200C5305C /* DexTitle.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		380B25A4218DDEEC00C5305C /* DEXServiceToolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DEXServiceToolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		380B25A8218DDEEC00C5305C /* DEXServiceToolUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DEXServiceToolUITests.swift; sourceTree = "<group>"; };
 		380B25AA218DDEEC00C5305C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		380B25B7218DE0D200C5305C /* DexTitle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DexTitle.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		380B2579218DDEEA00C5305C = {
 			isa = PBXGroup;
 			children = (
+				380B25B6218DE0D200C5305C /* images */,
 				380B2584218DDEEA00C5305C /* DEXServiceTool */,
 				380B259C218DDEEC00C5305C /* DEXServiceToolTests */,
 				380B25A7218DDEEC00C5305C /* DEXServiceToolUITests */,
@@ -126,6 +129,14 @@
 				380B25AA218DDEEC00C5305C /* Info.plist */,
 			);
 			path = DEXServiceToolUITests;
+			sourceTree = "<group>";
+		};
+		380B25B6218DE0D200C5305C /* images */ = {
+			isa = PBXGroup;
+			children = (
+				380B25B7218DE0D200C5305C /* DexTitle.png */,
+			);
+			path = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +245,7 @@
 			files = (
 				380B2593218DDEEB00C5305C /* LaunchScreen.storyboard in Resources */,
 				380B2590218DDEEB00C5305C /* Assets.xcassets in Resources */,
+				380B25B8218DE0D200C5305C /* DexTitle.png in Resources */,
 				380B258B218DDEEA00C5305C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -446,7 +458,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = gjh.DEXServiceTool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -464,7 +476,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = gjh.DEXServiceTool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
