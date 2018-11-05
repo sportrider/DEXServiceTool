@@ -11,19 +11,12 @@ import UIKit
 class HomeScreenViewController: UIViewController {
     @IBOutlet weak var backView: UIView!
     @IBOutlet weak var controlView: UIView!
-    
     @IBOutlet weak var manufacturerTxt: RoundedTextField!
-    
     @IBOutlet weak var modelNumTxt: RoundedTextField!
-    
     @IBOutlet weak var serialNumTxt: RoundedTextField!
-    
     @IBOutlet weak var ethernetAddTxt: RoundedTextField!
-    
     @IBOutlet weak var firmwareVerTxt: RoundedTextField!
-    
     @IBOutlet weak var batteryRemText: RoundedTextField!
-    
     @IBOutlet weak var connConfBtn: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
