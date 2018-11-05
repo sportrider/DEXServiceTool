@@ -16,6 +16,9 @@
 		380B259E218DDEEC00C5305C /* DEXServiceToolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380B259D218DDEEC00C5305C /* DEXServiceToolTests.swift */; };
 		380B25A9218DDEEC00C5305C /* DEXServiceToolUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380B25A8218DDEEC00C5305C /* DEXServiceToolUITests.swift */; };
 		380B25B8218DE0D200C5305C /* DexTitle.png in Resources */ = {isa = PBXBuildFile; fileRef = 380B25B7218DE0D200C5305C /* DexTitle.png */; };
+		3824B0DC218FBE3E0069871E /* ConnectConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3824B0DB218FBE3E0069871E /* ConnectConfirmViewController.swift */; };
+		3824B0DD218FBE3E0069871E /* ConnectConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3824B0DB218FBE3E0069871E /* ConnectConfirmViewController.swift */; };
+		3824B0DE218FBE3E0069871E /* ConnectConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3824B0DB218FBE3E0069871E /* ConnectConfirmViewController.swift */; };
 		3840278D218DFF7600B310E9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3840278C218DFF7600B310E9 /* LoginViewController.swift */; };
 		3840278E218DFF7600B310E9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3840278C218DFF7600B310E9 /* LoginViewController.swift */; };
 		3840278F218DFF7600B310E9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3840278C218DFF7600B310E9 /* LoginViewController.swift */; };
@@ -28,6 +31,9 @@
 		3840279A218E388D00B310E9 /* RoundedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38402799218E388D00B310E9 /* RoundedTextField.swift */; };
 		3840279B218E388D00B310E9 /* RoundedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38402799218E388D00B310E9 /* RoundedTextField.swift */; };
 		3840279C218E388D00B310E9 /* RoundedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38402799218E388D00B310E9 /* RoundedTextField.swift */; };
+		3840279E218E538D00B310E9 /* ConnectConfirm.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3840279D218E538D00B310E9 /* ConnectConfirm.storyboard */; };
+		3840279F218E538D00B310E9 /* ConnectConfirm.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3840279D218E538D00B310E9 /* ConnectConfirm.storyboard */; };
+		384027A0218E538D00B310E9 /* ConnectConfirm.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3840279D218E538D00B310E9 /* ConnectConfirm.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,10 +69,12 @@
 		380B25A8218DDEEC00C5305C /* DEXServiceToolUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DEXServiceToolUITests.swift; sourceTree = "<group>"; };
 		380B25AA218DDEEC00C5305C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		380B25B7218DE0D200C5305C /* DexTitle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DexTitle.png; sourceTree = "<group>"; };
+		3824B0DB218FBE3E0069871E /* ConnectConfirmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectConfirmViewController.swift; sourceTree = "<group>"; };
 		3840278C218DFF7600B310E9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		38402791218E03D200B310E9 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
 		38402795218E088E00B310E9 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		38402799218E388D00B310E9 /* RoundedTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedTextField.swift; sourceTree = "<group>"; };
+		3840279D218E538D00B310E9 /* ConnectConfirm.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ConnectConfirm.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +170,7 @@
 				3840278C218DFF7600B310E9 /* LoginViewController.swift */,
 				38402791218E03D200B310E9 /* HomeScreenViewController.swift */,
 				38402795218E088E00B310E9 /* MainTabBarViewController.swift */,
+				3824B0DB218FBE3E0069871E /* ConnectConfirmViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -179,6 +188,7 @@
 			children = (
 				380B2589218DDEEA00C5305C /* Main.storyboard */,
 				380B2591218DDEEB00C5305C /* LaunchScreen.storyboard */,
+				3840279D218E538D00B310E9 /* ConnectConfirm.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -291,6 +301,7 @@
 				380B2590218DDEEB00C5305C /* Assets.xcassets in Resources */,
 				380B25B8218DE0D200C5305C /* DexTitle.png in Resources */,
 				380B258B218DDEEA00C5305C /* Main.storyboard in Resources */,
+				3840279E218E538D00B310E9 /* ConnectConfirm.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +309,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3840279F218E538D00B310E9 /* ConnectConfirm.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,6 +317,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				384027A0218E538D00B310E9 /* ConnectConfirm.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,6 +332,7 @@
 				380B258E218DDEEA00C5305C /* DEXServiceTool.xcdatamodeld in Sources */,
 				380B2588218DDEEA00C5305C /* ViewController.swift in Sources */,
 				38402796218E088E00B310E9 /* MainTabBarViewController.swift in Sources */,
+				3824B0DC218FBE3E0069871E /* ConnectConfirmViewController.swift in Sources */,
 				3840279A218E388D00B310E9 /* RoundedTextField.swift in Sources */,
 				380B2586218DDEEA00C5305C /* AppDelegate.swift in Sources */,
 				38402792218E03D200B310E9 /* HomeScreenViewController.swift in Sources */,
@@ -333,6 +347,7 @@
 				38402797218E088E00B310E9 /* MainTabBarViewController.swift in Sources */,
 				380B259E218DDEEC00C5305C /* DEXServiceToolTests.swift in Sources */,
 				3840279B218E388D00B310E9 /* RoundedTextField.swift in Sources */,
+				3824B0DD218FBE3E0069871E /* ConnectConfirmViewController.swift in Sources */,
 				38402793218E03D200B310E9 /* HomeScreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -345,6 +360,7 @@
 				38402798218E088E00B310E9 /* MainTabBarViewController.swift in Sources */,
 				380B25A9218DDEEC00C5305C /* DEXServiceToolUITests.swift in Sources */,
 				3840279C218E388D00B310E9 /* RoundedTextField.swift in Sources */,
+				3824B0DE218FBE3E0069871E /* ConnectConfirmViewController.swift in Sources */,
 				38402794218E03D200B310E9 /* HomeScreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
