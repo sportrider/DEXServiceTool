@@ -112,21 +112,69 @@
             </objects>
             <point key="canvasLocation" x="-245" y="-367"/>
         </scene>
-        <!--Item 2-->
-        <scene sceneID="VfD-BT-AE5">
+        <!--Item-->
+        <scene sceneID="G2z-Bh-F5A">
             <objects>
-                <viewController id="Gn7-RT-IHx" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="gRr-St-mxv">
+                <viewController id="RlT-qO-jaP" customClass="DEXViewController" customModule="DEXServiceTool" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DfE-dH-Vb8">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="bgH-AZ-vhi"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="P6h-b0-9po"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QDf-O9-EIZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="812" y="577"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="ZUj-CW-JZv">
+            <objects>
+                <viewController id="KSx-qA-fo7" customClass="ToolKitViewController" customModule="DEXServiceTool" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4yG-eU-Meu">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="lC9-Vp-sDa"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="80w-yu-06a"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eu5-rp-huc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1883" y="606"/>
+        </scene>
+        <!--Item 2-->
+        <scene sceneID="VfD-BT-AE5">
+            <objects>
+                <viewController id="Gn7-RT-IHx" customClass="DevicesViewController" customModule="DEXServiceTool" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gRr-St-mxv">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="8Za-k8-jpo"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="1qv-Qg-Hxo"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K5R-rt-fUO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1461" y="38"/>
+            <point key="canvasLocation" x="1936" y="-223"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="tA9-VN-Gmh">
+            <objects>
+                <viewController id="2Vp-qp-HRQ" customClass="SettingsViewController" customModule="DEXServiceTool" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="owL-j0-4OX">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="xru-nR-Yxe"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="K1O-so-aZM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ojR-H1-9WG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="806" y="-1057"/>
         </scene>
         <!--Item 1-->
         <scene sceneID="YhU-6h-oVx">
@@ -369,7 +417,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3to-Cd-xY7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1461" y="-704"/>
+            <point key="canvasLocation" x="1645" y="-1109"/>
         </scene>
         <!--Main Tab Bar View Controller-->
         <scene sceneID="tVJ-aC-Z19">
@@ -383,6 +431,9 @@
                     <connections>
                         <segue destination="bM6-T9-6o5" kind="relationship" relationship="viewControllers" id="DHY-6n-g6A"/>
                         <segue destination="Gn7-RT-IHx" kind="relationship" relationship="viewControllers" id="nX8-bs-Cqm"/>
+                        <segue destination="RlT-qO-jaP" kind="relationship" relationship="viewControllers" id="NZt-r5-ARd"/>
+                        <segue destination="KSx-qA-fo7" kind="relationship" relationship="viewControllers" id="kK6-Ai-000"/>
+                        <segue destination="2Vp-qp-HRQ" kind="relationship" relationship="viewControllers" id="xV9-1m-QiI"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CrX-DV-HqQ" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -19,6 +19,18 @@
 		3824B0DC218FBE3E0069871E /* ConnectConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3824B0DB218FBE3E0069871E /* ConnectConfirmViewController.swift */; };
 		3824B0DD218FBE3E0069871E /* ConnectConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3824B0DB218FBE3E0069871E /* ConnectConfirmViewController.swift */; };
 		3824B0DE218FBE3E0069871E /* ConnectConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3824B0DB218FBE3E0069871E /* ConnectConfirmViewController.swift */; };
+		383D8ABE21913EBD00D0E765 /* DevicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383D8ABD21913EBD00D0E765 /* DevicesViewController.swift */; };
+		383D8ABF21913EBD00D0E765 /* DevicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383D8ABD21913EBD00D0E765 /* DevicesViewController.swift */; };
+		383D8AC021913EBD00D0E765 /* DevicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383D8ABD21913EBD00D0E765 /* DevicesViewController.swift */; };
+		383D8AC221913EE000D0E765 /* DEXViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383D8AC121913EE000D0E765 /* DEXViewController.swift */; };
+		383D8AC321913EE000D0E765 /* DEXViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383D8AC121913EE000D0E765 /* DEXViewController.swift */; };
+		383D8AC421913EE000D0E765 /* DEXViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383D8AC121913EE000D0E765 /* DEXViewController.swift */; };
+		383D8AC621913F0900D0E765 /* ToolKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383D8AC521913F0900D0E765 /* ToolKitViewController.swift */; };
+		383D8AC721913F0900D0E765 /* ToolKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383D8AC521913F0900D0E765 /* ToolKitViewController.swift */; };
+		383D8AC821913F0900D0E765 /* ToolKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383D8AC521913F0900D0E765 /* ToolKitViewController.swift */; };
+		383D8ACA21913F1E00D0E765 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383D8AC921913F1E00D0E765 /* SettingsViewController.swift */; };
+		383D8ACB21913F1E00D0E765 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383D8AC921913F1E00D0E765 /* SettingsViewController.swift */; };
+		383D8ACC21913F1E00D0E765 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383D8AC921913F1E00D0E765 /* SettingsViewController.swift */; };
 		3840278D218DFF7600B310E9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3840278C218DFF7600B310E9 /* LoginViewController.swift */; };
 		3840278E218DFF7600B310E9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3840278C218DFF7600B310E9 /* LoginViewController.swift */; };
 		3840278F218DFF7600B310E9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3840278C218DFF7600B310E9 /* LoginViewController.swift */; };
@@ -70,6 +82,10 @@
 		380B25AA218DDEEC00C5305C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		380B25B7218DE0D200C5305C /* DexTitle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DexTitle.png; sourceTree = "<group>"; };
 		3824B0DB218FBE3E0069871E /* ConnectConfirmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectConfirmViewController.swift; sourceTree = "<group>"; };
+		383D8ABD21913EBD00D0E765 /* DevicesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesViewController.swift; sourceTree = "<group>"; };
+		383D8AC121913EE000D0E765 /* DEXViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DEXViewController.swift; sourceTree = "<group>"; };
+		383D8AC521913F0900D0E765 /* ToolKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolKitViewController.swift; sourceTree = "<group>"; };
+		383D8AC921913F1E00D0E765 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		3840278C218DFF7600B310E9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		38402791218E03D200B310E9 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
 		38402795218E088E00B310E9 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
@@ -171,6 +187,10 @@
 				38402791218E03D200B310E9 /* HomeScreenViewController.swift */,
 				38402795218E088E00B310E9 /* MainTabBarViewController.swift */,
 				3824B0DB218FBE3E0069871E /* ConnectConfirmViewController.swift */,
+				383D8ABD21913EBD00D0E765 /* DevicesViewController.swift */,
+				383D8AC121913EE000D0E765 /* DEXViewController.swift */,
+				383D8AC521913F0900D0E765 /* ToolKitViewController.swift */,
+				383D8AC921913F1E00D0E765 /* SettingsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -328,14 +348,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				383D8AC221913EE000D0E765 /* DEXViewController.swift in Sources */,
 				3840278D218DFF7600B310E9 /* LoginViewController.swift in Sources */,
 				380B258E218DDEEA00C5305C /* DEXServiceTool.xcdatamodeld in Sources */,
+				383D8AC621913F0900D0E765 /* ToolKitViewController.swift in Sources */,
 				380B2588218DDEEA00C5305C /* ViewController.swift in Sources */,
 				38402796218E088E00B310E9 /* MainTabBarViewController.swift in Sources */,
 				3824B0DC218FBE3E0069871E /* ConnectConfirmViewController.swift in Sources */,
 				3840279A218E388D00B310E9 /* RoundedTextField.swift in Sources */,
 				380B2586218DDEEA00C5305C /* AppDelegate.swift in Sources */,
+				383D8ABE21913EBD00D0E765 /* DevicesViewController.swift in Sources */,
 				38402792218E03D200B310E9 /* HomeScreenViewController.swift in Sources */,
+				383D8ACA21913F1E00D0E765 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +368,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3840278E218DFF7600B310E9 /* LoginViewController.swift in Sources */,
+				383D8ABF21913EBD00D0E765 /* DevicesViewController.swift in Sources */,
+				383D8AC721913F0900D0E765 /* ToolKitViewController.swift in Sources */,
+				383D8ACB21913F1E00D0E765 /* SettingsViewController.swift in Sources */,
+				383D8AC321913EE000D0E765 /* DEXViewController.swift in Sources */,
 				38402797218E088E00B310E9 /* MainTabBarViewController.swift in Sources */,
 				380B259E218DDEEC00C5305C /* DEXServiceToolTests.swift in Sources */,
 				3840279B218E388D00B310E9 /* RoundedTextField.swift in Sources */,
@@ -357,6 +385,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3840278F218DFF7600B310E9 /* LoginViewController.swift in Sources */,
+				383D8AC021913EBD00D0E765 /* DevicesViewController.swift in Sources */,
+				383D8AC821913F0900D0E765 /* ToolKitViewController.swift in Sources */,
+				383D8ACC21913F1E00D0E765 /* SettingsViewController.swift in Sources */,
+				383D8AC421913EE000D0E765 /* DEXViewController.swift in Sources */,
 				38402798218E088E00B310E9 /* MainTabBarViewController.swift in Sources */,
 				380B25A9218DDEEC00C5305C /* DEXServiceToolUITests.swift in Sources */,
 				3840279C218E388D00B310E9 /* RoundedTextField.swift in Sources */,
