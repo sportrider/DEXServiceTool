@@ -17,8 +17,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="IDDeviceViewTableView" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HiA-Ih-vq8">
-                                <rect key="frame" x="0.0" y="20" width="834" height="1092"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" restorationIdentifier="IDDeviceViewTableView" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HiA-Ih-vq8">
+                                <rect key="frame" x="0.0" y="-5" width="834" height="1092"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="RIDDeviceViewTableViewCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="IDDeviceViewTableViewCell" id="h04-Fc-i6g" customClass="DeviceViewTableViewCell" customModule="DEXServiceTool" customModuleProvider="target">
@@ -27,7 +27,66 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="h04-Fc-i6g" id="IKc-Ax-cUv">
                                             <rect key="frame" x="0.0" y="0.0" width="834" height="99.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WPj-fm-yvq" customClass="RoundedButton" customModule="DEXServiceTool" customModuleProvider="target">
+                                                    <rect key="frame" x="689" y="30" width="100" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="100" id="19G-DU-HHV"/>
+                                                        <constraint firstAttribute="height" constant="40" id="Vy0-6E-3Yg"/>
+                                                    </constraints>
+                                                    <state key="normal" title="Button"/>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="164-nX-vVR" customClass="RoundedButton" customModule="DEXServiceTool" customModuleProvider="target">
+                                                    <rect key="frame" x="529" y="30" width="100" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="100" id="nfN-6D-dvR"/>
+                                                        <constraint firstAttribute="height" constant="40" id="weG-91-YVg"/>
+                                                    </constraints>
+                                                    <state key="normal" title="Button"/>
+                                                </button>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="barGauge.png" translatesAutoresizingMaskIntoConstraints="NO" id="92h-Q1-cNe">
+                                                    <rect key="frame" x="20" y="20" width="40" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="40" id="7D9-t7-sSe"/>
+                                                        <constraint firstAttribute="height" constant="40" id="JlO-D0-LAU"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-71" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9FT-Wr-imo">
+                                                    <rect key="frame" x="10" y="59" width="60" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="60" id="Kt7-qV-PTM"/>
+                                                        <constraint firstAttribute="height" constant="30" id="LUA-lx-Whj"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T2M-Wl-fNP">
+                                                    <rect key="frame" x="80" y="31" width="429" height="38"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="T2M-Wl-fNP" firstAttribute="leading" secondItem="92h-Q1-cNe" secondAttribute="trailing" constant="20" id="0gV-hK-pnz"/>
+                                                <constraint firstItem="WPj-fm-yvq" firstAttribute="leading" secondItem="164-nX-vVR" secondAttribute="trailing" constant="60" id="C4M-Ng-2gz"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="T2M-Wl-fNP" secondAttribute="bottom" constant="20" id="Ecn-2B-LLi"/>
+                                                <constraint firstItem="164-nX-vVR" firstAttribute="centerY" secondItem="IKc-Ax-cUv" secondAttribute="centerY" id="SlB-9U-Lv8"/>
+                                                <constraint firstItem="9FT-Wr-imo" firstAttribute="centerX" secondItem="92h-Q1-cNe" secondAttribute="centerX" id="TjX-y7-6bo"/>
+                                                <constraint firstItem="T2M-Wl-fNP" firstAttribute="top" secondItem="IKc-Ax-cUv" secondAttribute="topMargin" constant="20" id="Ucw-sx-cHz"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="WPj-fm-yvq" secondAttribute="trailing" constant="30" id="azR-P6-obc"/>
+                                                <constraint firstItem="92h-Q1-cNe" firstAttribute="leading" secondItem="IKc-Ax-cUv" secondAttribute="leading" constant="20" id="eer-A0-wvP"/>
+                                                <constraint firstAttribute="bottom" secondItem="9FT-Wr-imo" secondAttribute="bottom" constant="10.5" id="ihD-eO-LPD"/>
+                                                <constraint firstItem="164-nX-vVR" firstAttribute="leading" secondItem="T2M-Wl-fNP" secondAttribute="trailing" constant="20" id="nAL-Tz-VyA"/>
+                                                <constraint firstItem="92h-Q1-cNe" firstAttribute="top" secondItem="IKc-Ax-cUv" secondAttribute="top" constant="20" id="qHf-2n-0WB"/>
+                                                <constraint firstItem="WPj-fm-yvq" firstAttribute="centerY" secondItem="IKc-Ax-cUv" secondAttribute="centerY" id="yVl-vJ-ctp"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="connectButton" destination="WPj-fm-yvq" id="Umi-hb-UWq"/>
+                                            <outlet property="pairButton" destination="164-nX-vVR" id="2WD-g4-JRJ"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -54,4 +113,7 @@
             <point key="canvasLocation" x="121.58273381294966" y="162.9496402877698"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="barGauge.png" width="76" height="70"/>
+    </resources>
 </document>

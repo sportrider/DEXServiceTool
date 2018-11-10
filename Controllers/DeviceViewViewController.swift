@@ -25,7 +25,9 @@ class DeviceViewViewController: UIViewController, UITableViewDataSource, UITable
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = deviceTV.dequeueReusableCell(withIdentifier: "IDDeviceViewTableViewCell", for: indexPath) as! DeviceViewTableViewCell
-
+        
+        cell.connectButton.setTitle("Connect", for: .normal)
+        cell.pairButton.setTitle("Pair", for: .normal)
         
         return cell
     }

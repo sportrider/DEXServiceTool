@@ -9,8 +9,9 @@
 import UIKit
 
 class DeviceViewTableViewCell: UITableViewCell {
-    @IBOutlet weak var connectButton: UIButton!
     
+    @IBOutlet weak var pairButton: RoundedButton!
+    @IBOutlet weak var connectButton: RoundedButton!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

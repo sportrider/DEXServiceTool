@@ -25,6 +25,9 @@
 		3836372321974DFE00AC2763 /* DeviceViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3836372221974DFE00AC2763 /* DeviceViewTableViewCell.swift */; };
 		3836372421974DFE00AC2763 /* DeviceViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3836372221974DFE00AC2763 /* DeviceViewTableViewCell.swift */; };
 		3836372521974DFE00AC2763 /* DeviceViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3836372221974DFE00AC2763 /* DeviceViewTableViewCell.swift */; };
+		38363727219761A200AC2763 /* barGauge.png in Resources */ = {isa = PBXBuildFile; fileRef = 38363726219761A200AC2763 /* barGauge.png */; };
+		38363728219761A200AC2763 /* barGauge.png in Resources */ = {isa = PBXBuildFile; fileRef = 38363726219761A200AC2763 /* barGauge.png */; };
+		38363729219761A200AC2763 /* barGauge.png in Resources */ = {isa = PBXBuildFile; fileRef = 38363726219761A200AC2763 /* barGauge.png */; };
 		383D8AC221913EE000D0E765 /* DEXViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383D8AC121913EE000D0E765 /* DEXViewController.swift */; };
 		383D8AC321913EE000D0E765 /* DEXViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383D8AC121913EE000D0E765 /* DEXViewController.swift */; };
 		383D8AC421913EE000D0E765 /* DEXViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383D8AC121913EE000D0E765 /* DEXViewController.swift */; };
@@ -102,6 +105,7 @@
 		3824B0DB218FBE3E0069871E /* ConnectConfirmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectConfirmViewController.swift; sourceTree = "<group>"; };
 		3836371E21974D3200AC2763 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		3836372221974DFE00AC2763 /* DeviceViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceViewTableViewCell.swift; sourceTree = "<group>"; };
+		38363726219761A200AC2763 /* barGauge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = barGauge.png; sourceTree = "<group>"; };
 		383D8AC121913EE000D0E765 /* DEXViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DEXViewController.swift; sourceTree = "<group>"; };
 		383D8AC521913F0900D0E765 /* ToolKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolKitViewController.swift; sourceTree = "<group>"; };
 		383D8AC921913F1E00D0E765 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
@@ -199,6 +203,7 @@
 		380B25B6218DE0D200C5305C /* images */ = {
 			isa = PBXGroup;
 			children = (
+				38363726219761A200AC2763 /* barGauge.png */,
 				38CF38B12197352700179728 /* bluetooth.png */,
 				380B25B7218DE0D200C5305C /* DexTitle.png */,
 			);
@@ -352,6 +357,7 @@
 				38CF38AE2197220F00179728 /* DeviceView.storyboard in Resources */,
 				380B2590218DDEEB00C5305C /* Assets.xcassets in Resources */,
 				380B25B8218DE0D200C5305C /* DexTitle.png in Resources */,
+				38363727219761A200AC2763 /* barGauge.png in Resources */,
 				380B258B218DDEEA00C5305C /* Main.storyboard in Resources */,
 				3840279E218E538D00B310E9 /* ConnectConfirm.storyboard in Resources */,
 			);
@@ -362,6 +368,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				38CF38B32197352700179728 /* bluetooth.png in Resources */,
+				38363728219761A200AC2763 /* barGauge.png in Resources */,
 				3840279F218E538D00B310E9 /* ConnectConfirm.storyboard in Resources */,
 				38CF38AF2197220F00179728 /* DeviceView.storyboard in Resources */,
 			);
@@ -372,6 +379,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				38CF38B42197352700179728 /* bluetooth.png in Resources */,
+				38363729219761A200AC2763 /* barGauge.png in Resources */,
 				384027A0218E538D00B310E9 /* ConnectConfirm.storyboard in Resources */,
 				38CF38B02197220F00179728 /* DeviceView.storyboard in Resources */,
 			);
