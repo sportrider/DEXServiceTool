@@ -35,14 +35,26 @@ class HomeScreenViewController: UIViewController {
     }
     */
     @IBAction func didTapConnectConfirm(_ sender: UIButton) {
+        viewConnectConfirmOver(viewController: self)
+        
+//        let sb = UIStoryboard(name: "ConnectConfirm", bundle: nil)
+//        let newVC: ConnectConfirmViewController = sb.instantiateViewController(withIdentifier: "IDConnectConfirm") as! ConnectConfirmViewController
+        
+//        self.present(newVC, animated: true, completion: nil)
         
         
+    }
+    
+}
+
+extension UIViewController {
+    
+    func viewConnectConfirmOver(viewController: UIViewController) {
         let sb = UIStoryboard(name: "ConnectConfirm", bundle: nil)
         let newVC: ConnectConfirmViewController = sb.instantiateViewController(withIdentifier: "IDConnectConfirm") as! ConnectConfirmViewController
         
-        self.present(newVC, animated: true, completion: nil)
-        
-        
+        viewController.present(newVC, animated: true, completion: nil)
+
     }
     
 }
