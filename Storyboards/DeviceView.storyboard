@@ -16,13 +16,42 @@
                     <view key="view" contentMode="scaleToFill" id="Nmq-kd-aW5">
                         <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="IDDeviceViewTableView" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HiA-Ih-vq8">
+                                <rect key="frame" x="0.0" y="20" width="834" height="1092"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="RIDDeviceViewTableViewCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="IDDeviceViewTableViewCell" id="h04-Fc-i6g" customClass="DeviceViewTableViewCell" customModule="DEXServiceTool" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="834" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="h04-Fc-i6g" id="IKc-Ax-cUv">
+                                            <rect key="frame" x="0.0" y="0.0" width="834" height="99.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="QBL-Oa-FAq" id="xnY-0k-uqR"/>
+                                    <outlet property="delegate" destination="QBL-Oa-FAq" id="MBq-7t-OsI"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Dmu-IH-uG9" firstAttribute="trailing" secondItem="HiA-Ih-vq8" secondAttribute="trailing" id="8CJ-EY-XVS"/>
+                            <constraint firstItem="HiA-Ih-vq8" firstAttribute="top" secondItem="Dmu-IH-uG9" secondAttribute="top" id="Vy2-2W-dfc"/>
+                            <constraint firstItem="Dmu-IH-uG9" firstAttribute="bottom" secondItem="HiA-Ih-vq8" secondAttribute="bottom" id="ijb-WU-7Ot"/>
+                            <constraint firstItem="HiA-Ih-vq8" firstAttribute="leading" secondItem="Dmu-IH-uG9" secondAttribute="leading" id="rAp-m7-AmQ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Dmu-IH-uG9"/>
                     </view>
+                    <connections>
+                        <outlet property="deviceTV" destination="HiA-Ih-vq8" id="zdC-nN-od8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Iwg-PR-nk4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="122" y="163"/>
+            <point key="canvasLocation" x="121.58273381294966" y="162.9496402877698"/>
         </scene>
     </scenes>
 </document>

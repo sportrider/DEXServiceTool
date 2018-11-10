@@ -444,14 +444,14 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WLe-db-fNq">
-                                                    <rect key="frame" x="20" y="20" width="100" height="100"/>
+                                                    <rect key="frame" x="20" y="5" width="90" height="90"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="100" id="7Ih-of-MjV"/>
-                                                        <constraint firstAttribute="width" constant="100" id="NcC-Cy-lGu"/>
+                                                        <constraint firstAttribute="height" constant="90" id="7Ih-of-MjV"/>
+                                                        <constraint firstAttribute="width" constant="90" id="NcC-Cy-lGu"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2HY-HK-BZt">
-                                                    <rect key="frame" x="160" y="15" width="619" height="21"/>
+                                                    <rect key="frame" x="150" y="15" width="629" height="70"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -461,7 +461,6 @@
                                                 <constraint firstAttribute="bottomMargin" secondItem="2HY-HK-BZt" secondAttribute="bottom" constant="4" id="1gA-Z1-kqc"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="2HY-HK-BZt" secondAttribute="trailing" constant="40" id="4rY-c6-gXc"/>
                                                 <constraint firstItem="2HY-HK-BZt" firstAttribute="leading" secondItem="WLe-db-fNq" secondAttribute="trailing" constant="40" id="LXQ-gz-EHx"/>
-                                                <constraint firstItem="WLe-db-fNq" firstAttribute="top" secondItem="8co-I8-RIK" secondAttribute="top" constant="20" symbolic="YES" id="M7d-0h-dHH"/>
                                                 <constraint firstItem="WLe-db-fNq" firstAttribute="centerY" secondItem="8co-I8-RIK" secondAttribute="centerY" id="Owp-Qf-g8Z"/>
                                                 <constraint firstItem="2HY-HK-BZt" firstAttribute="top" secondItem="8co-I8-RIK" secondAttribute="topMargin" constant="4" id="PNS-Jc-hHA"/>
                                                 <constraint firstItem="WLe-db-fNq" firstAttribute="leading" secondItem="8co-I8-RIK" secondAttribute="leading" constant="20" id="goz-vr-d8t"/>
@@ -497,7 +496,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yJO-Sl-MUh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1532.8125" y="-434.1796875"/>
+            <point key="canvasLocation" x="1520" y="-549"/>
         </scene>
         <!--IDDeviceViewStoryboard-->
         <scene sceneID="YT5-c1-W4B">
