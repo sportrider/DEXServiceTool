@@ -17,7 +17,7 @@ class HomeScreenViewController: UIViewController {
     @IBOutlet weak var ethernetAddTxt: RoundedTextField!
     @IBOutlet weak var firmwareVerTxt: RoundedTextField!
     @IBOutlet weak var batteryRemText: RoundedTextField!
-    @IBOutlet weak var connConfBtn: UIButton!
+    @IBOutlet weak var connConfBtn: RoundedButton!
     override func viewDidLoad() {
         super.viewDidLoad()
 

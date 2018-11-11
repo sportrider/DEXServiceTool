@@ -16,6 +16,7 @@ class MainTabBarViewController: UITabBarController {
         // Do any additional setup after loading the view.
         
         self.title = "Devices"
+        self.navigationItem.setHidesBackButton(true, animated:true)
     }
     
 

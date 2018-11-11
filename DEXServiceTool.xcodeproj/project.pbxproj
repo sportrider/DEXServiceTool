@@ -149,6 +149,7 @@
 		380B2579218DDEEA00C5305C = {
 			isa = PBXGroup;
 			children = (
+				3813CB9521978B9500069F4D /* CustomControls */,
 				38402790218DFF8200B310E9 /* Storyboards */,
 				3840278B218DFF3400B310E9 /* Views */,
 				3840278A218DFF2400B310E9 /* Controllers */,
@@ -210,6 +211,15 @@
 			path = images;
 			sourceTree = "<group>";
 		};
+		3813CB9521978B9500069F4D /* CustomControls */ = {
+			isa = PBXGroup;
+			children = (
+				3836371E21974D3200AC2763 /* RoundedButton.swift */,
+				38402799218E388D00B310E9 /* RoundedTextField.swift */,
+			);
+			path = CustomControls;
+			sourceTree = "<group>";
+		};
 		3840278A218DFF2400B310E9 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -229,9 +239,7 @@
 		3840278B218DFF3400B310E9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				38402799218E388D00B310E9 /* RoundedTextField.swift */,
 				38CF38A521971F2F00179728 /* DevicesTableViewCell.swift */,
-				3836371E21974D3200AC2763 /* RoundedButton.swift */,
 				3836372221974DFE00AC2763 /* DeviceViewTableViewCell.swift */,
 			);
 			path = Views;

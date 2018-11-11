@@ -12,7 +12,7 @@ class LoginViewController: UIViewController {
 
     @IBOutlet weak var userNameTxt: RoundedTextField!
     @IBOutlet weak var pswdTxt: RoundedTextField!
-    @IBOutlet weak var loginBtn: UIButton!
+    @IBOutlet weak var loginBtn: RoundedButton!
     
     
     override func viewDidLoad() {

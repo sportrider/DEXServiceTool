@@ -17,8 +17,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" restorationIdentifier="IDDeviceViewTableView" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HiA-Ih-vq8">
-                                <rect key="frame" x="0.0" y="-5" width="834" height="1092"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="IDDeviceViewTableView" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HiA-Ih-vq8">
+                                <rect key="frame" x="0.0" y="130" width="834" height="982"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="RIDDeviceViewTableViewCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="IDDeviceViewTableViewCell" id="h04-Fc-i6g" customClass="DeviceViewTableViewCell" customModule="DEXServiceTool" customModuleProvider="target">
@@ -35,6 +35,9 @@
                                                         <constraint firstAttribute="height" constant="40" id="Vy0-6E-3Yg"/>
                                                     </constraints>
                                                     <state key="normal" title="Button"/>
+                                                    <connections>
+                                                        <action selector="didTapConnectButton:" destination="h04-Fc-i6g" eventType="touchUpInside" id="8m8-nl-bHe"/>
+                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="164-nX-vVR" customClass="RoundedButton" customModule="DEXServiceTool" customModuleProvider="target">
                                                     <rect key="frame" x="529" y="30" width="100" height="40"/>
@@ -43,6 +46,9 @@
                                                         <constraint firstAttribute="height" constant="40" id="weG-91-YVg"/>
                                                     </constraints>
                                                     <state key="normal" title="Button"/>
+                                                    <connections>
+                                                        <action selector="didTapPairButton:" destination="h04-Fc-i6g" eventType="touchUpInside" id="BSg-QD-35X"/>
+                                                    </connections>
                                                 </button>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="barGauge.png" translatesAutoresizingMaskIntoConstraints="NO" id="92h-Q1-cNe">
                                                     <rect key="frame" x="20" y="20" width="40" height="40"/>
@@ -85,7 +91,9 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="connectButton" destination="WPj-fm-yvq" id="Umi-hb-UWq"/>
+                                            <outlet property="guageLevelLabel" destination="9FT-Wr-imo" id="gpx-1U-aPj"/>
                                             <outlet property="pairButton" destination="164-nX-vVR" id="2WD-g4-JRJ"/>
+                                            <outlet property="peripheralNameLabel" destination="T2M-Wl-fNP" id="CYQ-aC-ea5"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -94,12 +102,36 @@
                                     <outlet property="delegate" destination="QBL-Oa-FAq" id="MBq-7t-OsI"/>
                                 </connections>
                             </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TuK-9H-fyQ">
+                                <rect key="frame" x="0.0" y="70" width="834" height="60"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Peripherals Nearby" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2yW-t6-UfV">
+                                        <rect key="frame" x="303" y="13" width="228" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="228" id="PE3-OZ-W2Q"/>
+                                            <constraint firstAttribute="height" constant="34" id="prQ-TY-l0Z"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="2yW-t6-UfV" firstAttribute="centerX" secondItem="TuK-9H-fyQ" secondAttribute="centerX" id="3bS-Y7-3uE"/>
+                                    <constraint firstItem="2yW-t6-UfV" firstAttribute="centerY" secondItem="TuK-9H-fyQ" secondAttribute="centerY" id="Jyy-c8-i5m"/>
+                                    <constraint firstAttribute="height" constant="60" id="jF3-Tg-3p7"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="HiA-Ih-vq8" firstAttribute="top" secondItem="TuK-9H-fyQ" secondAttribute="bottom" id="7lF-gH-DWn"/>
                             <constraint firstItem="Dmu-IH-uG9" firstAttribute="trailing" secondItem="HiA-Ih-vq8" secondAttribute="trailing" id="8CJ-EY-XVS"/>
-                            <constraint firstItem="HiA-Ih-vq8" firstAttribute="top" secondItem="Dmu-IH-uG9" secondAttribute="top" id="Vy2-2W-dfc"/>
+                            <constraint firstItem="TuK-9H-fyQ" firstAttribute="leading" secondItem="Dmu-IH-uG9" secondAttribute="leading" id="Dwk-Mg-c6X"/>
+                            <constraint firstItem="Dmu-IH-uG9" firstAttribute="trailing" secondItem="TuK-9H-fyQ" secondAttribute="trailing" id="R2X-Xd-XGh"/>
                             <constraint firstItem="Dmu-IH-uG9" firstAttribute="bottom" secondItem="HiA-Ih-vq8" secondAttribute="bottom" id="ijb-WU-7Ot"/>
+                            <constraint firstItem="TuK-9H-fyQ" firstAttribute="top" secondItem="Nmq-kd-aW5" secondAttribute="top" constant="70" id="ldc-cH-3OW"/>
                             <constraint firstItem="HiA-Ih-vq8" firstAttribute="leading" secondItem="Dmu-IH-uG9" secondAttribute="leading" id="rAp-m7-AmQ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Dmu-IH-uG9"/>
@@ -110,7 +142,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Iwg-PR-nk4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="121.58273381294966" y="162.9496402877698"/>
+            <point key="canvasLocation" x="47.482014388489212" y="106.29496402877699"/>
         </scene>
     </scenes>
     <resources>

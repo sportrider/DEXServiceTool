@@ -8,7 +8,9 @@
 
 import UIKit
 
-class DeviceViewViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class DeviceViewViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, DeviceViewTableViewCellDelegate {
+
+    
 
     @IBOutlet weak var deviceTV: UITableView!
     override func viewDidLoad() {
@@ -28,6 +30,9 @@ class DeviceViewViewController: UIViewController, UITableViewDataSource, UITable
         
         cell.connectButton.setTitle("Connect", for: .normal)
         cell.pairButton.setTitle("Pair", for: .normal)
+        cell.peripheralNameLabel.text = "Peripheral Name"
+        cell.guageLevelLabel.text = "75"
+        cell.delegate = self
         
         return cell
     }
@@ -39,6 +44,14 @@ class DeviceViewViewController: UIViewController, UITableViewDataSource, UITable
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
+    }
+    
+    func didTapConnectButton() {
+        viewConnectConfirmOver(viewController: self)
+    }
+    
+    func didTapPairButton() {
+        
     }
 
     /*

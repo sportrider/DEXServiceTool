@@ -17,7 +17,6 @@ class DevicesViewController: UIViewController, UITableViewDelegate, UITableViewD
 
         // Do any additional setup after loading the view.
         
- //       self.navigationItem. = "Devices"
     }
     
 
@@ -45,10 +44,7 @@ class DevicesViewController: UIViewController, UITableViewDelegate, UITableViewD
         cell.deviceImage.layer.cornerRadius = 10.0
         cell.deviceImage.clipsToBounds = true
         cell.deviceImage.image = UIImage(named: "bluetooth")
-//        self.view.bringSubviewToFront(cell.deviceImage)
-
-        
-        cell.deviceName?.text = "XXXXXXXXX"
+        cell.deviceName?.text = "Device Name"
         
         return cell
     }
@@ -62,6 +58,18 @@ class DevicesViewController: UIViewController, UITableViewDelegate, UITableViewD
         return 1
     }
     
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "IDDeviceViewSegue" {
+            
+            if let nextVC = segue.destination as? DeviceViewViewController {
+                // set properties for next view contoller
+                
+                
+            }
+        }
+    }
     
     
 }

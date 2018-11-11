@@ -54,7 +54,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gVx-uP-bhi">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gVx-uP-bhi" customClass="RoundedButton" customModule="DEXServiceTool" customModuleProvider="target">
                                 <rect key="frame" x="317" y="808" width="200" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="1fL-ml-P4g"/>
@@ -296,9 +296,10 @@
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UXL-zy-gvn">
-                                                <rect key="frame" x="257" y="454.5" width="240" height="40"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UXL-zy-gvn" customClass="RoundedButton" customModule="DEXServiceTool" customModuleProvider="target">
+                                                <rect key="frame" x="237" y="454.5" width="280" height="40"/>
                                                 <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="280" id="azL-db-wMx"/>
                                                     <constraint firstAttribute="height" constant="40" id="hRj-OB-VpO"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
@@ -470,7 +471,7 @@
                                         <connections>
                                             <outlet property="deviceImage" destination="WLe-db-fNq" id="Wlh-Ju-6QZ"/>
                                             <outlet property="deviceName" destination="2HY-HK-BZt" id="bPo-ly-tFp"/>
-                                            <segue destination="hoR-JJ-DYS" kind="show" id="nT8-wE-R3j"/>
+                                            <segue destination="hoR-JJ-DYS" kind="show" identifier="IDDeviceViewSegue" id="nT8-wE-R3j"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
