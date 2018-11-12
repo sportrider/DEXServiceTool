@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol SegmentControlDelegate: class {
+    func didSelectSegment(segment: Int)
+}
+
 class DevicesViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var devicesTV: UITableView!

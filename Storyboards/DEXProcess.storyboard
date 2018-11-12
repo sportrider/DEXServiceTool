@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad10_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="WLD-Ty-ZCO">
+            <objects>
+                <viewController id="YIk-lR-yer" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0Y8-9k-ypN">
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NPy-45-5ix">
+                                <rect key="frame" x="227" y="96" width="270" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="DAn-IF-0Zd"/>
+                                    <constraint firstAttribute="width" constant="270" id="jwS-0l-3aR"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="qmR-m8-7Ra"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="DEX Status:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7KI-Db-lyX">
+                                <rect key="frame" x="393" y="225" width="340" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="HVM-Rp-h8w"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="340" id="PUL-Sq-Qvd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" red="1" green="0.20088002329999999" blue="0.068297118980000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="52C-Mm-Lv8" customClass="RoundedButton" customModule="DEXServiceTool" customModuleProvider="target">
+                                <rect key="frame" x="533" y="96" width="200" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="Ufo-FH-br5"/>
+                                    <constraint firstAttribute="height" constant="45" id="e6V-k2-nsS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <state key="normal" title="Scan Asset"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Asset #:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uAC-RK-1gc">
+                                <rect key="frame" x="99" y="102" width="104" height="33"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C1a-tA-E0x" customClass="RoundedButton" customModule="DEXServiceTool" customModuleProvider="target">
+                                <rect key="frame" x="533" y="161" width="200" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="SQd-mS-hKc"/>
+                                    <constraint firstAttribute="height" constant="42" id="hCC-PC-HgD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <state key="normal" title="Save / Send"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fwv-nw-IQi" customClass="RoundedButton" customModule="DEXServiceTool" customModuleProvider="target">
+                                <rect key="frame" x="227" y="160" width="200" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="kc9-ON-nJy"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="psw-Ru-tFH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <state key="normal" title="Start DEX"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="DEX Status:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ayJ-7X-hGQ">
+                                <rect key="frame" x="227" y="225" width="138" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="138" id="nWS-2Q-pAb"/>
+                                    <constraint firstAttribute="height" constant="40" id="tRz-KK-2fz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="uAC-RK-1gc" firstAttribute="centerY" secondItem="NPy-45-5ix" secondAttribute="centerY" id="3QV-6F-uc5"/>
+                            <constraint firstItem="NPy-45-5ix" firstAttribute="centerY" secondItem="52C-Mm-Lv8" secondAttribute="centerY" id="Fgu-gL-bhf"/>
+                            <constraint firstItem="52C-Mm-Lv8" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="NPy-45-5ix" secondAttribute="trailing" constant="8" symbolic="YES" id="IPj-ut-i0v"/>
+                            <constraint firstItem="7KI-Db-lyX" firstAttribute="top" secondItem="fwv-nw-IQi" secondAttribute="bottom" constant="20" id="ItV-jK-uun"/>
+                            <constraint firstItem="fwv-nw-IQi" firstAttribute="leading" secondItem="ayJ-7X-hGQ" secondAttribute="leading" id="MPr-8X-JmZ"/>
+                            <constraint firstItem="C1a-tA-E0x" firstAttribute="trailing" secondItem="52C-Mm-Lv8" secondAttribute="trailing" id="VdS-gQ-hRV"/>
+                            <constraint firstItem="7KI-Db-lyX" firstAttribute="leading" secondItem="ayJ-7X-hGQ" secondAttribute="trailing" constant="28" id="Vw4-7B-SaK"/>
+                            <constraint firstItem="C1a-tA-E0x" firstAttribute="leading" secondItem="fwv-nw-IQi" secondAttribute="trailing" constant="106" id="WuT-sh-hwK"/>
+                            <constraint firstItem="fwv-nw-IQi" firstAttribute="centerY" secondItem="C1a-tA-E0x" secondAttribute="centerY" id="ZQw-NW-F6k"/>
+                            <constraint firstItem="C1a-tA-E0x" firstAttribute="top" secondItem="52C-Mm-Lv8" secondAttribute="bottom" constant="20" id="hzK-fw-7ke"/>
+                            <constraint firstItem="ayJ-7X-hGQ" firstAttribute="centerY" secondItem="7KI-Db-lyX" secondAttribute="centerY" id="wah-yj-7aB"/>
+                            <constraint firstItem="NPy-45-5ix" firstAttribute="leading" secondItem="uAC-RK-1gc" secondAttribute="trailing" constant="24" id="yiV-5u-2qE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Kdc-d4-aMz"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yAX-zL-cxA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="49" y="89"/>
+        </scene>
+    </scenes>
+</document>

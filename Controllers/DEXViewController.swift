@@ -10,6 +10,11 @@ import UIKit
 
 class DEXViewController: UIViewController {
 
+    @IBOutlet weak var segmentControl: UISegmentedControl!
+    weak var segmentControlDelegate: SegmentControlDelegate?
+
+    @IBOutlet weak var dexContainerView: DEXContainerView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -27,4 +32,20 @@ class DEXViewController: UIViewController {
     }
     */
 
+    @IBAction func didChangeSegmentValue(_ sender: UISegmentedControl) {
+        
+        self.segmentControlDelegate?.didSelectSegment(segment: segmentControl.selectedSegmentIndex)
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "IDDEXContainerSegue" {
+            if let containerVC = segue.destination as? DEXContainerViewController {
+                self.segmentControlDelegate = containerVC
+            }
+        }
+        
+    }
+    
 }
