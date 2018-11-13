@@ -8,8 +8,12 @@
 
 import UIKit
 
-class DEXAuditViewController: UIViewController {
+class DEXAuditViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
+    
+    @IBOutlet weak var auditSegmentControl: UISegmentedControl!
+    @IBOutlet weak var auditTableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -26,5 +30,30 @@ class DEXAuditViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    @IBAction func auditSegmentValueChanged(_ sender: UISegmentedControl) {
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        <#code#>
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        <#code#>
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        
+        let headerView = UIView()
+        
+        return headerView
+    }
+    
+    func sectionIndexTitles(for tableView: UITableView) -> [String]? {
+        <#code#>
+    }
+    
 }

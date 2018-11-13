@@ -1,7 +1,85 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad10_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <scenes/>
+    <scenes>
+        <!--Audit View Controller-->
+        <scene sceneID="Oe6-wL-DTo">
+            <objects>
+                <viewController id="S38-zT-ZId" customClass="DEXAuditViewController" customModule="DEXServiceTool" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Z7K-lZ-GXS">
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2J7-pj-Qd9">
+                                <rect key="frame" x="0.0" y="0.0" width="834" height="60"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Audit Data" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="If1-3t-mlt">
+                                        <rect key="frame" x="303" y="13" width="228" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="228" id="M3b-AZ-2af"/>
+                                            <constraint firstAttribute="height" constant="34" id="es0-2b-jcP"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="Cy9-Fy-rpX"/>
+                                    <constraint firstItem="If1-3t-mlt" firstAttribute="centerX" secondItem="2J7-pj-Qd9" secondAttribute="centerX" id="HjF-7Z-FJ6"/>
+                                    <constraint firstItem="If1-3t-mlt" firstAttribute="centerY" secondItem="2J7-pj-Qd9" secondAttribute="centerY" id="Jtg-Xp-7xt"/>
+                                    <constraint firstAttribute="height" constant="60" id="hwL-qS-Jdr"/>
+                                </constraints>
+                            </view>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="xsi-ex-WHr">
+                                <rect key="frame" x="237" y="80" width="360" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="360" id="H3f-B7-Kpa"/>
+                                    <constraint firstAttribute="height" constant="40" id="kRN-Tt-K9z"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                </segments>
+                                <connections>
+                                    <action selector="auditSegmentValueChanged:" destination="S38-zT-ZId" eventType="valueChanged" id="7Mn-MO-FVg"/>
+                                </connections>
+                            </segmentedControl>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="B0Q-tc-okc">
+                                <rect key="frame" x="20" y="140" width="794" height="952"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fpC-Ws-S0F" firstAttribute="bottom" secondItem="B0Q-tc-okc" secondAttribute="bottom" constant="20" id="BII-fY-6Bp"/>
+                            <constraint firstItem="2J7-pj-Qd9" firstAttribute="top" secondItem="Z7K-lZ-GXS" secondAttribute="top" id="DjM-pc-eHL"/>
+                            <constraint firstItem="2J7-pj-Qd9" firstAttribute="trailing" secondItem="fpC-Ws-S0F" secondAttribute="trailing" id="IQx-Vh-NrG"/>
+                            <constraint firstItem="xsi-ex-WHr" firstAttribute="top" secondItem="2J7-pj-Qd9" secondAttribute="bottom" constant="20" id="PJc-x2-OK3"/>
+                            <constraint firstItem="B0Q-tc-okc" firstAttribute="leading" secondItem="fpC-Ws-S0F" secondAttribute="leading" constant="20" id="akh-q6-Jvy"/>
+                            <constraint firstItem="2J7-pj-Qd9" firstAttribute="leading" secondItem="fpC-Ws-S0F" secondAttribute="leading" id="bUd-Y4-RB5"/>
+                            <constraint firstItem="xsi-ex-WHr" firstAttribute="centerX" secondItem="Z7K-lZ-GXS" secondAttribute="centerX" id="fhG-A0-kan"/>
+                            <constraint firstItem="fpC-Ws-S0F" firstAttribute="trailing" secondItem="B0Q-tc-okc" secondAttribute="trailing" constant="20" id="h0Q-sM-oOq"/>
+                            <constraint firstItem="B0Q-tc-okc" firstAttribute="top" secondItem="xsi-ex-WHr" secondAttribute="bottom" constant="20" id="sct-oO-lb0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fpC-Ws-S0F"/>
+                    </view>
+                    <connections>
+                        <outlet property="auditSegmentControl" destination="xsi-ex-WHr" id="bt9-8E-6bA"/>
+                        <outlet property="auditTableView" destination="B0Q-tc-okc" id="6JQ-uK-CfI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hbc-RQ-c2x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="211.51079136690649" y="169.96402877697841"/>
+        </scene>
+    </scenes>
 </document>

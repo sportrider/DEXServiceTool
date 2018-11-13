@@ -10,10 +10,16 @@ import UIKit
 
 class DEXProcessViewController: UIViewController {
 
+    @IBOutlet weak var dexProcessTextView: UITextView!
+    @IBOutlet weak var saveSendButton: RoundedButton!
+    @IBOutlet weak var scanAssetButton: RoundedButton!
+    @IBOutlet weak var startDEXButton: RoundedButton!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        self.dexProcessTextView.layer.cornerRadius = 10.0
     }
     
 
@@ -26,5 +32,14 @@ class DEXProcessViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    
+    @IBAction func didTapStartDEXButton(_ sender: RoundedButton) {
+    }
+    
+    @IBAction func didTapSaveSendButton(_ sender: RoundedButton) {
+    }
+    
+    @IBAction func didTapScanAssetButton(_ sender: RoundedButton) {
+    }
+    
 }
