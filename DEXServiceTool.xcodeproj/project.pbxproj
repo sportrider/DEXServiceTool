@@ -103,6 +103,12 @@
 		38CF38B22197352700179728 /* bluetooth.png in Resources */ = {isa = PBXBuildFile; fileRef = 38CF38B12197352700179728 /* bluetooth.png */; };
 		38CF38B32197352700179728 /* bluetooth.png in Resources */ = {isa = PBXBuildFile; fileRef = 38CF38B12197352700179728 /* bluetooth.png */; };
 		38CF38B42197352700179728 /* bluetooth.png in Resources */ = {isa = PBXBuildFile; fileRef = 38CF38B12197352700179728 /* bluetooth.png */; };
+		38DD4B24219BA08C00A84568 /* AuditTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DD4B23219BA08C00A84568 /* AuditTableViewCell.swift */; };
+		38DD4B25219BA08C00A84568 /* AuditTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DD4B23219BA08C00A84568 /* AuditTableViewCell.swift */; };
+		38DD4B26219BA08C00A84568 /* AuditTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DD4B23219BA08C00A84568 /* AuditTableViewCell.swift */; };
+		38DD4B29219BA4CF00A84568 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DD4B28219BA4CF00A84568 /* MockData.swift */; };
+		38DD4B2A219BA4CF00A84568 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DD4B28219BA4CF00A84568 /* MockData.swift */; };
+		38DD4B2B219BA4CF00A84568 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DD4B28219BA4CF00A84568 /* MockData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -167,6 +173,8 @@
 		38CF38A9219721A600179728 /* DeviceViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DeviceViewViewController.swift; path = Controllers/DeviceViewViewController.swift; sourceTree = SOURCE_ROOT; };
 		38CF38AD2197220F00179728 /* DeviceView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DeviceView.storyboard; sourceTree = "<group>"; };
 		38CF38B12197352700179728 /* bluetooth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bluetooth.png; sourceTree = "<group>"; };
+		38DD4B23219BA08C00A84568 /* AuditTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuditTableViewCell.swift; sourceTree = "<group>"; };
+		38DD4B28219BA4CF00A84568 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +205,7 @@
 		380B2579218DDEEA00C5305C = {
 			isa = PBXGroup;
 			children = (
+				38DD4B27219BA49900A84568 /* Model */,
 				3813CB9521978B9500069F4D /* CustomControls */,
 				38402790218DFF8200B310E9 /* Storyboards */,
 				3840278B218DFF3400B310E9 /* Views */,
@@ -296,6 +305,7 @@
 				38CF38A521971F2F00179728 /* DevicesTableViewCell.swift */,
 				3836372221974DFE00AC2763 /* DeviceViewTableViewCell.swift */,
 				38883C2F21991C6500D1BDEA /* DEXContainerView.swift */,
+				38DD4B23219BA08C00A84568 /* AuditTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -314,6 +324,14 @@
 				3851900121991141003E4B31 /* DEXHelp.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		38DD4B27219BA49900A84568 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				38DD4B28219BA4CF00A84568 /* MockData.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -480,6 +498,7 @@
 				38518FEE219910AC003E4B31 /* DEXHelpViewController.swift in Sources */,
 				38518FE221991045003E4B31 /* DEXAuditViewController.swift in Sources */,
 				38CF38AA219721A600179728 /* DeviceViewViewController.swift in Sources */,
+				38DD4B24219BA08C00A84568 /* AuditTableViewCell.swift in Sources */,
 				3840278D218DFF7600B310E9 /* LoginViewController.swift in Sources */,
 				38518FDE21991026003E4B31 /* DEXProcessViewController.swift in Sources */,
 				380B258E218DDEEA00C5305C /* DEXServiceTool.xcdatamodeld in Sources */,
@@ -488,6 +507,7 @@
 				3836372321974DFE00AC2763 /* DeviceViewTableViewCell.swift in Sources */,
 				386CA79A2195167B00BDAEC2 /* DevicesViewController.swift in Sources */,
 				38518FEA2199108C003E4B31 /* DEXPOGViewController.swift in Sources */,
+				38DD4B29219BA4CF00A84568 /* MockData.swift in Sources */,
 				38883C3021991C6500D1BDEA /* DEXContainerView.swift in Sources */,
 				380B2588218DDEEA00C5305C /* ViewController.swift in Sources */,
 				38883C2C2199140500D1BDEA /* DEXContainerViewController.swift in Sources */,
@@ -507,7 +527,9 @@
 			files = (
 				38883C3121991C6500D1BDEA /* DEXContainerView.swift in Sources */,
 				3840278E218DFF7600B310E9 /* LoginViewController.swift in Sources */,
+				38DD4B2A219BA4CF00A84568 /* MockData.swift in Sources */,
 				38518FEB2199108C003E4B31 /* DEXPOGViewController.swift in Sources */,
+				38DD4B25219BA08C00A84568 /* AuditTableViewCell.swift in Sources */,
 				383D8AC721913F0900D0E765 /* ToolKitViewController.swift in Sources */,
 				38518FDF21991026003E4B31 /* DEXProcessViewController.swift in Sources */,
 				3836372421974DFE00AC2763 /* DeviceViewTableViewCell.swift in Sources */,
@@ -535,7 +557,9 @@
 			files = (
 				38883C3221991C6500D1BDEA /* DEXContainerView.swift in Sources */,
 				3840278F218DFF7600B310E9 /* LoginViewController.swift in Sources */,
+				38DD4B2B219BA4CF00A84568 /* MockData.swift in Sources */,
 				38518FEC2199108C003E4B31 /* DEXPOGViewController.swift in Sources */,
+				38DD4B26219BA08C00A84568 /* AuditTableViewCell.swift in Sources */,
 				383D8AC821913F0900D0E765 /* ToolKitViewController.swift in Sources */,
 				38518FE021991026003E4B31 /* DEXProcessViewController.swift in Sources */,
 				3836372521974DFE00AC2763 /* DeviceViewTableViewCell.swift in Sources */,

@@ -33,19 +33,22 @@ class DEXContainerViewController: UIViewController, SegmentControlDelegate {
         
         switch segment {
         case 0:
-            dexProcessVC?.view.isHidden = false
+            self.dexProcessVC?.view.isHidden = false
+            self.dexAuditVC?.view.isHidden = true
 //            pickUpVC?.view.isHidden = true
 //            deliveryVC?.view.isHidden = true
             
             
-            self.view.bringSubviewToFront((dexProcessVC?.view)!)
+            self.view.bringSubviewToFront((self.dexProcessVC?.view)!)
             
- //       case 1:
-//            vehicleVC?.view.isHidden = true
-//            pickUpVC?.view.isHidden = false
-//            deliveryVC?.view.isHidden = true
+        case 1:
+            self.dexAuditVC?.view.isHidden = false
+            self.dexProcessVC?.view.isHidden = true
+            //            pickUpVC?.view.isHidden = true
+            //            deliveryVC?.view.isHidden = true
             
-//            self.view.bringSubview(toFront: (pickUpVC?.view)!)
+            
+            self.view.bringSubviewToFront((self.dexAuditVC?.view)!)
             
 //        case 2:
 //            vehicleVC?.view.isHidden = true
@@ -67,11 +70,18 @@ class DEXContainerViewController: UIViewController, SegmentControlDelegate {
     {
         let dexProcessSB: UIStoryboard = UIStoryboard(name: "DEXProcess", bundle: nil)
         self.dexProcessVC = dexProcessSB.instantiateViewController(withIdentifier: "IDDEXProcessStoryboard") as? DEXProcessViewController
- //       self.dexProcessVC?.delegate = self
         self.addChild(dexProcessVC!)
         self.view.addSubview((self.dexProcessVC?.view)!)
         self.dexProcessVC?.view.frame = self.view.bounds
         self.dexProcessVC?.didMove(toParent: self)
+        
+        
+        let dexAuditSB: UIStoryboard = UIStoryboard(name: "DEXAudit", bundle: nil)
+        self.dexAuditVC = dexAuditSB.instantiateViewController(withIdentifier: "IDDEXAuditStoryboard") as? DEXAuditViewController
+        self.addChild(self.dexAuditVC!)
+        self.view.addSubview((self.dexAuditVC?.view)!)
+        self.dexAuditVC?.view.frame = self.view.bounds
+        self.dexAuditVC?.didMove(toParent: self)
         
 /*
         

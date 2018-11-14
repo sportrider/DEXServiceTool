@@ -12,7 +12,7 @@
         <!--Audit View Controller-->
         <scene sceneID="Oe6-wL-DTo">
             <objects>
-                <viewController id="S38-zT-ZId" customClass="DEXAuditViewController" customModule="DEXServiceTool" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="IDDEXAuditStoryboard" id="S38-zT-ZId" customClass="DEXAuditViewController" customModule="DEXServiceTool" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Z7K-lZ-GXS">
                         <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -56,6 +56,62 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="B0Q-tc-okc">
                                 <rect key="frame" x="20" y="140" width="794" height="952"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="IDAuditTableViewCell" id="MMe-TL-k7N" customClass="AuditTableViewCell" customModule="DEXServiceTool" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="794" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="MMe-TL-k7N" id="Flw-Ra-sUz">
+                                            <rect key="frame" x="0.0" y="0.0" width="794" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="55k-Ly-BP3">
+                                                    <rect key="frame" x="17" y="10" width="200" height="24"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="200" id="RVM-cG-Y3O"/>
+                                                        <constraint firstAttribute="height" constant="24" id="ksX-1k-7c1"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0rc-Nh-20O">
+                                                    <rect key="frame" x="219" y="10" width="256" height="24"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="24" id="IR6-SL-kln"/>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="42" id="UpO-ih-fTY"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VYe-pk-G7h">
+                                                    <rect key="frame" x="477" y="10" width="300" height="24"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="24" id="jZA-Ih-vKm"/>
+                                                        <constraint firstAttribute="width" constant="300" id="pQC-9T-m9a"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="55k-Ly-BP3" firstAttribute="leading" secondItem="Flw-Ra-sUz" secondAttribute="leadingMargin" constant="2" id="A4c-Jo-tET"/>
+                                                <constraint firstItem="VYe-pk-G7h" firstAttribute="centerY" secondItem="0rc-Nh-20O" secondAttribute="centerY" id="Xii-87-Bhk"/>
+                                                <constraint firstItem="VYe-pk-G7h" firstAttribute="leading" secondItem="0rc-Nh-20O" secondAttribute="trailing" constant="2" id="a2M-Z1-7d7"/>
+                                                <constraint firstItem="0rc-Nh-20O" firstAttribute="centerY" secondItem="Flw-Ra-sUz" secondAttribute="centerY" id="eIp-OI-mpL"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="VYe-pk-G7h" secondAttribute="trailing" constant="2" id="kBF-Em-XNL"/>
+                                                <constraint firstItem="0rc-Nh-20O" firstAttribute="leading" secondItem="55k-Ly-BP3" secondAttribute="trailing" constant="2" id="uQJ-5j-Ye4"/>
+                                                <constraint firstItem="VYe-pk-G7h" firstAttribute="baseline" secondItem="55k-Ly-BP3" secondAttribute="baseline" id="zYu-Xl-HCt"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="deviceDescription" destination="VYe-pk-G7h" id="der-0h-DOs"/>
+                                            <outlet property="deviceID" destination="55k-Ly-BP3" id="67d-4R-c1h"/>
+                                            <outlet property="deviceName" destination="0rc-Nh-20O" id="N0n-6v-ZRJ"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
