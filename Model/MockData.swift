@@ -24,7 +24,7 @@ struct DeviceData: Codable {
 }
 
     
-struct Alerts: Codable {
+struct Alert: Codable {
     
     public let date: String?
     public let time: String?
@@ -41,4 +41,18 @@ struct Alerts: Codable {
 }
     
     
+struct POG: Codable {
+    
+    public let column: String?
+    public let price: String?
+    public let description: String?
+    
+    
+    enum CodingKeys: String, CodingKey {
+        case column = "Column"
+        case price = "Price"
+        case description = "Description"
+    }
+}
+
 

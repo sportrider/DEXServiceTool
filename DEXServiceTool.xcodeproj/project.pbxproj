@@ -16,6 +16,9 @@
 		380B259E218DDEEC00C5305C /* DEXServiceToolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380B259D218DDEEC00C5305C /* DEXServiceToolTests.swift */; };
 		380B25A9218DDEEC00C5305C /* DEXServiceToolUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380B25A8218DDEEC00C5305C /* DEXServiceToolUITests.swift */; };
 		380B25B8218DE0D200C5305C /* DexTitle.png in Resources */ = {isa = PBXBuildFile; fileRef = 380B25B7218DE0D200C5305C /* DexTitle.png */; };
+		3814191921A0928B005EA5EA /* DEXPOG.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3814191821A0928B005EA5EA /* DEXPOG.storyboard */; };
+		3814191A21A0928B005EA5EA /* DEXPOG.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3814191821A0928B005EA5EA /* DEXPOG.storyboard */; };
+		3814191B21A0928B005EA5EA /* DEXPOG.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3814191821A0928B005EA5EA /* DEXPOG.storyboard */; };
 		3824B0DC218FBE3E0069871E /* ConnectConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3824B0DB218FBE3E0069871E /* ConnectConfirmViewController.swift */; };
 		3824B0DD218FBE3E0069871E /* ConnectConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3824B0DB218FBE3E0069871E /* ConnectConfirmViewController.swift */; };
 		3824B0DE218FBE3E0069871E /* ConnectConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3824B0DB218FBE3E0069871E /* ConnectConfirmViewController.swift */; };
@@ -76,15 +79,18 @@
 		38518FFA21991115003E4B31 /* DEXAlerts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38518FF921991115003E4B31 /* DEXAlerts.storyboard */; };
 		38518FFB21991115003E4B31 /* DEXAlerts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38518FF921991115003E4B31 /* DEXAlerts.storyboard */; };
 		38518FFC21991115003E4B31 /* DEXAlerts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38518FF921991115003E4B31 /* DEXAlerts.storyboard */; };
-		38518FFE2199112B003E4B31 /* DEXPOG.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38518FFD2199112B003E4B31 /* DEXPOG.storyboard */; };
-		38518FFF2199112B003E4B31 /* DEXPOG.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38518FFD2199112B003E4B31 /* DEXPOG.storyboard */; };
-		385190002199112B003E4B31 /* DEXPOG.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38518FFD2199112B003E4B31 /* DEXPOG.storyboard */; };
 		3851900221991141003E4B31 /* DEXHelp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3851900121991141003E4B31 /* DEXHelp.storyboard */; };
 		3851900321991141003E4B31 /* DEXHelp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3851900121991141003E4B31 /* DEXHelp.storyboard */; };
 		3851900421991141003E4B31 /* DEXHelp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3851900121991141003E4B31 /* DEXHelp.storyboard */; };
 		3864034F21A0572200BAA781 /* DEXAlertsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3864034E21A0572200BAA781 /* DEXAlertsTableViewCell.swift */; };
 		3864035021A0572200BAA781 /* DEXAlertsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3864034E21A0572200BAA781 /* DEXAlertsTableViewCell.swift */; };
 		3864035121A0572200BAA781 /* DEXAlertsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3864034E21A0572200BAA781 /* DEXAlertsTableViewCell.swift */; };
+		3864574021A0855B0015F356 /* DEXPOGTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3864573F21A0855B0015F356 /* DEXPOGTableViewCell.swift */; };
+		3864574121A0855B0015F356 /* DEXPOGTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3864573F21A0855B0015F356 /* DEXPOGTableViewCell.swift */; };
+		3864574221A0855B0015F356 /* DEXPOGTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3864573F21A0855B0015F356 /* DEXPOGTableViewCell.swift */; };
+		3864574821A08E9D0015F356 /* DEXPOGTableViewHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3864574721A08E9D0015F356 /* DEXPOGTableViewHeaderCell.swift */; };
+		3864574921A08E9D0015F356 /* DEXPOGTableViewHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3864574721A08E9D0015F356 /* DEXPOGTableViewHeaderCell.swift */; };
+		3864574A21A08E9D0015F356 /* DEXPOGTableViewHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3864574721A08E9D0015F356 /* DEXPOGTableViewHeaderCell.swift */; };
 		386CA79A2195167B00BDAEC2 /* DevicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386CA7992195167B00BDAEC2 /* DevicesViewController.swift */; };
 		386CA79B2195167B00BDAEC2 /* DevicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386CA7992195167B00BDAEC2 /* DevicesViewController.swift */; };
 		386CA79C2195167B00BDAEC2 /* DevicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386CA7992195167B00BDAEC2 /* DevicesViewController.swift */; };
@@ -147,6 +153,7 @@
 		380B25A8218DDEEC00C5305C /* DEXServiceToolUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DEXServiceToolUITests.swift; sourceTree = "<group>"; };
 		380B25AA218DDEEC00C5305C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		380B25B7218DE0D200C5305C /* DexTitle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DexTitle.png; sourceTree = "<group>"; };
+		3814191821A0928B005EA5EA /* DEXPOG.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DEXPOG.storyboard; sourceTree = "<group>"; };
 		3824B0DB218FBE3E0069871E /* ConnectConfirmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectConfirmViewController.swift; sourceTree = "<group>"; };
 		3836371E21974D3200AC2763 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		3836372221974DFE00AC2763 /* DeviceViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceViewTableViewCell.swift; sourceTree = "<group>"; };
@@ -167,9 +174,10 @@
 		38518FF1219910DD003E4B31 /* DEXProcess.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DEXProcess.storyboard; sourceTree = "<group>"; };
 		38518FF5219910FE003E4B31 /* DEXAudit.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DEXAudit.storyboard; sourceTree = "<group>"; };
 		38518FF921991115003E4B31 /* DEXAlerts.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DEXAlerts.storyboard; sourceTree = "<group>"; };
-		38518FFD2199112B003E4B31 /* DEXPOG.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DEXPOG.storyboard; sourceTree = "<group>"; };
 		3851900121991141003E4B31 /* DEXHelp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DEXHelp.storyboard; sourceTree = "<group>"; };
 		3864034E21A0572200BAA781 /* DEXAlertsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DEXAlertsTableViewCell.swift; sourceTree = "<group>"; };
+		3864573F21A0855B0015F356 /* DEXPOGTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DEXPOGTableViewCell.swift; sourceTree = "<group>"; };
+		3864574721A08E9D0015F356 /* DEXPOGTableViewHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DEXPOGTableViewHeaderCell.swift; sourceTree = "<group>"; };
 		386CA7992195167B00BDAEC2 /* DevicesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesViewController.swift; sourceTree = "<group>"; };
 		38883C2B2199140500D1BDEA /* DEXContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DEXContainerViewController.swift; sourceTree = "<group>"; };
 		38883C2F21991C6500D1BDEA /* DEXContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DEXContainerView.swift; sourceTree = "<group>"; };
@@ -311,6 +319,8 @@
 				38883C2F21991C6500D1BDEA /* DEXContainerView.swift */,
 				38DD4B23219BA08C00A84568 /* AuditTableViewCell.swift */,
 				3864034E21A0572200BAA781 /* DEXAlertsTableViewCell.swift */,
+				3864573F21A0855B0015F356 /* DEXPOGTableViewCell.swift */,
+				3864574721A08E9D0015F356 /* DEXPOGTableViewHeaderCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -325,8 +335,8 @@
 				38518FF1219910DD003E4B31 /* DEXProcess.storyboard */,
 				38518FF5219910FE003E4B31 /* DEXAudit.storyboard */,
 				38518FF921991115003E4B31 /* DEXAlerts.storyboard */,
-				38518FFD2199112B003E4B31 /* DEXPOG.storyboard */,
 				3851900121991141003E4B31 /* DEXHelp.storyboard */,
+				3814191821A0928B005EA5EA /* DEXPOG.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -447,11 +457,11 @@
 				380B2593218DDEEB00C5305C /* LaunchScreen.storyboard in Resources */,
 				38CF38B22197352700179728 /* bluetooth.png in Resources */,
 				38CF38AE2197220F00179728 /* DeviceView.storyboard in Resources */,
+				3814191921A0928B005EA5EA /* DEXPOG.storyboard in Resources */,
 				380B2590218DDEEB00C5305C /* Assets.xcassets in Resources */,
 				380B25B8218DE0D200C5305C /* DexTitle.png in Resources */,
 				38363727219761A200AC2763 /* barGauge.png in Resources */,
 				38518FF2219910DD003E4B31 /* DEXProcess.storyboard in Resources */,
-				38518FFE2199112B003E4B31 /* DEXPOG.storyboard in Resources */,
 				380B258B218DDEEA00C5305C /* Main.storyboard in Resources */,
 				38518FF6219910FE003E4B31 /* DEXAudit.storyboard in Resources */,
 				3840279E218E538D00B310E9 /* ConnectConfirm.storyboard in Resources */,
@@ -464,6 +474,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				38CF38B32197352700179728 /* bluetooth.png in Resources */,
+				3814191A21A0928B005EA5EA /* DEXPOG.storyboard in Resources */,
 				38363728219761A200AC2763 /* barGauge.png in Resources */,
 				3840279F218E538D00B310E9 /* ConnectConfirm.storyboard in Resources */,
 				3851900321991141003E4B31 /* DEXHelp.storyboard in Resources */,
@@ -471,7 +482,6 @@
 				38518FFB21991115003E4B31 /* DEXAlerts.storyboard in Resources */,
 				38518FF7219910FE003E4B31 /* DEXAudit.storyboard in Resources */,
 				38CF38AF2197220F00179728 /* DeviceView.storyboard in Resources */,
-				38518FFF2199112B003E4B31 /* DEXPOG.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -480,6 +490,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				38CF38B42197352700179728 /* bluetooth.png in Resources */,
+				3814191B21A0928B005EA5EA /* DEXPOG.storyboard in Resources */,
 				38363729219761A200AC2763 /* barGauge.png in Resources */,
 				384027A0218E538D00B310E9 /* ConnectConfirm.storyboard in Resources */,
 				3851900421991141003E4B31 /* DEXHelp.storyboard in Resources */,
@@ -487,7 +498,6 @@
 				38518FFC21991115003E4B31 /* DEXAlerts.storyboard in Resources */,
 				38518FF8219910FE003E4B31 /* DEXAudit.storyboard in Resources */,
 				38CF38B02197220F00179728 /* DeviceView.storyboard in Resources */,
-				385190002199112B003E4B31 /* DEXPOG.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,6 +513,7 @@
 				38518FEE219910AC003E4B31 /* DEXHelpViewController.swift in Sources */,
 				38518FE221991045003E4B31 /* DEXAuditViewController.swift in Sources */,
 				38CF38AA219721A600179728 /* DeviceViewViewController.swift in Sources */,
+				3864574821A08E9D0015F356 /* DEXPOGTableViewHeaderCell.swift in Sources */,
 				38DD4B24219BA08C00A84568 /* AuditTableViewCell.swift in Sources */,
 				3864034F21A0572200BAA781 /* DEXAlertsTableViewCell.swift in Sources */,
 				3840278D218DFF7600B310E9 /* LoginViewController.swift in Sources */,
@@ -524,6 +535,7 @@
 				38402792218E03D200B310E9 /* HomeScreenViewController.swift in Sources */,
 				38CF38A621971F2F00179728 /* DevicesTableViewCell.swift in Sources */,
 				383D8ACA21913F1E00D0E765 /* SettingsViewController.swift in Sources */,
+				3864574021A0855B0015F356 /* DEXPOGTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -540,6 +552,7 @@
 				38518FDF21991026003E4B31 /* DEXProcessViewController.swift in Sources */,
 				3836372421974DFE00AC2763 /* DeviceViewTableViewCell.swift in Sources */,
 				383D8ACB21913F1E00D0E765 /* SettingsViewController.swift in Sources */,
+				3864574121A0855B0015F356 /* DEXPOGTableViewCell.swift in Sources */,
 				38518FEF219910AC003E4B31 /* DEXHelpViewController.swift in Sources */,
 				383D8AC321913EE000D0E765 /* DEXViewController.swift in Sources */,
 				38402797218E088E00B310E9 /* MainTabBarViewController.swift in Sources */,
@@ -547,6 +560,7 @@
 				380B259E218DDEEC00C5305C /* DEXServiceToolTests.swift in Sources */,
 				386CA79B2195167B00BDAEC2 /* DevicesViewController.swift in Sources */,
 				3840279B218E388D00B310E9 /* RoundedTextField.swift in Sources */,
+				3864574921A08E9D0015F356 /* DEXPOGTableViewHeaderCell.swift in Sources */,
 				3824B0DD218FBE3E0069871E /* ConnectConfirmViewController.swift in Sources */,
 				38402793218E03D200B310E9 /* HomeScreenViewController.swift in Sources */,
 				38CF38AB219721A600179728 /* DeviceViewViewController.swift in Sources */,
@@ -571,6 +585,7 @@
 				38518FE021991026003E4B31 /* DEXProcessViewController.swift in Sources */,
 				3836372521974DFE00AC2763 /* DeviceViewTableViewCell.swift in Sources */,
 				383D8ACC21913F1E00D0E765 /* SettingsViewController.swift in Sources */,
+				3864574221A0855B0015F356 /* DEXPOGTableViewCell.swift in Sources */,
 				38518FF0219910AC003E4B31 /* DEXHelpViewController.swift in Sources */,
 				383D8AC421913EE000D0E765 /* DEXViewController.swift in Sources */,
 				38402798218E088E00B310E9 /* MainTabBarViewController.swift in Sources */,
@@ -578,6 +593,7 @@
 				380B25A9218DDEEC00C5305C /* DEXServiceToolUITests.swift in Sources */,
 				386CA79C2195167B00BDAEC2 /* DevicesViewController.swift in Sources */,
 				3840279C218E388D00B310E9 /* RoundedTextField.swift in Sources */,
+				3864574A21A08E9D0015F356 /* DEXPOGTableViewHeaderCell.swift in Sources */,
 				3824B0DE218FBE3E0069871E /* ConnectConfirmViewController.swift in Sources */,
 				38402794218E03D200B310E9 /* HomeScreenViewController.swift in Sources */,
 				38CF38AC219721A600179728 /* DeviceViewViewController.swift in Sources */,

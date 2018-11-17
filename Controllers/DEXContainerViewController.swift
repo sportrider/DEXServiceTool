@@ -31,41 +31,32 @@ class DEXContainerViewController: UIViewController, SegmentControlDelegate {
     
     func didSelectSegment(segment: Int) {
         
+        self.dexAuditVC?.view.isHidden = true
+        self.dexProcessVC?.view.isHidden = true
+        self.dexAlertsVC?.view.isHidden = true
+        self.dexPOGVC?.view.isHidden = true
+        
         switch segment {
         case 0:
             self.dexProcessVC?.view.isHidden = false
-            self.dexAuditVC?.view.isHidden = true
-            self.dexAlertsVC?.view.isHidden = true
-//            pickUpVC?.view.isHidden = true
-//            deliveryVC?.view.isHidden = true
-            
-            
             self.view.bringSubviewToFront((self.dexProcessVC?.view)!)
             
         case 1:
             self.dexAuditVC?.view.isHidden = false
-            self.dexProcessVC?.view.isHidden = true
-            self.dexAlertsVC?.view.isHidden = true
-            //            pickUpVC?.view.isHidden = true
-            //            deliveryVC?.view.isHidden = true
-            
-            
             self.view.bringSubviewToFront((self.dexAuditVC?.view)!)
             
         case 2:
-            self.dexAuditVC?.view.isHidden = true
-            self.dexProcessVC?.view.isHidden = true
             self.dexAlertsVC?.view.isHidden = false
+            self.view.bringSubviewToFront((self.dexAlertsVC?.view)!)
             
-//            self.view.bringSubview(toFront: (deliveryVC?.view)!)
-            
+        case 3:
+            self.dexPOGVC?.view.isHidden = false
+            self.view.bringSubviewToFront((self.dexPOGVC?.view)!)
+
         default:
             break
         }
-        
-        
     }
-    
     
     
     func setUpContainerView()
@@ -92,31 +83,15 @@ class DEXContainerViewController: UIViewController, SegmentControlDelegate {
         self.dexAlertsVC?.view.frame = self.view.bounds
         self.dexAlertsVC?.didMove(toParent: self)
         
-/*
+
+        let dexPOGSB: UIStoryboard = UIStoryboard(name: "DEXPOG", bundle: nil)
+        self.dexPOGVC = dexPOGSB.instantiateViewController(withIdentifier: "IDDEXPOGStoryboard") as? DEXPOGViewController
+        self.addChild(self.dexPOGVC!)
+        self.view.addSubview((self.dexPOGVC?.view)!)
+        self.dexPOGVC?.view.frame = self.view.bounds
+        self.dexPOGVC?.didMove(toParent: self)
         
-        let pickUpSB: UIStoryboard = UIStoryboard(name: "PickUp", bundle: nil)
-        self.pickUpVC = pickUpSB.instantiateViewController(withIdentifier: "IDPickUpViewController") as? PickUpViewController
-        
-        self.addChildViewController(pickUpVC!)
-        
-        let deliverySB: UIStoryboard = UIStoryboard(name: "Delivery", bundle: nil)
-        self.deliveryVC = deliverySB.instantiateViewController(withIdentifier: "IDDeliveryViewController") as? DeliveryViewController
-        
-        self.addChildViewController(self.vehicleVC!)
-        self.view.addSubview((self.vehicleVC?.view)!)
-        self.vehicleVC?.view.frame = self.view.bounds
-        self.vehicleVC?.didMove(toParentViewController: self)
-        
-        self.addChildViewController(self.pickUpVC!)
-        self.view.addSubview((self.pickUpVC?.view)!)
-        self.pickUpVC?.view.frame = self.view.bounds
-        self.pickUpVC?.didMove(toParentViewController: self)
-        
-        self.addChildViewController(self.deliveryVC!)
-        self.view.addSubview((self.deliveryVC?.view)!)
-        self.deliveryVC?.view.frame = self.view.bounds
-        self.deliveryVC?.didMove(toParentViewController: self)
- */
+
         applyShadowTo(vw: self.view)
         self.view.layer.cornerRadius = 10
         

@@ -13,7 +13,7 @@ class DEXAlertsViewController: UIViewController, UITableViewDelegate, UITableVie
 
     @IBOutlet weak var alertsTV: UITableView!
     
-    var alerts: [Alerts]?
+    var alerts: [Alert]?
 
     
     override func viewDidLoad() {
@@ -76,11 +76,11 @@ class DEXAlertsViewController: UIViewController, UITableViewDelegate, UITableVie
         
         self.alerts = []
         
-        self.alerts?.append(Alerts(date: "11/13/18", time: "11:13:02", subSystem: "Changer", event: "Inlet Tube Chute Blocked Error"))
-        self.alerts?.append(Alerts(date: "11/14/18", time: "14:18:16", subSystem: "Bill Validator", event: "Bill Stacker Full"))
-        self.alerts?.append(Alerts(date: "11/15/18", time: "12:07:09", subSystem: "Refrigeration", event: "Too Cold"))
-        self.alerts?.append(Alerts(date: "11/16/18", time: "08:08:11", subSystem: "Control System", event: "AC Low"))
-        self.alerts?.append(Alerts(date: "11/18/18", time: "19:02:28", subSystem: "Vending Mechanism", event: "Column JAM"))
+        self.alerts?.append(Alert(date: "11/13/18", time: "11:13:02", subSystem: "Changer", event: "Inlet Tube Chute Blocked Error"))
+        self.alerts?.append(Alert(date: "11/14/18", time: "14:18:16", subSystem: "Bill Validator", event: "Bill Stacker Full"))
+        self.alerts?.append(Alert(date: "11/15/18", time: "12:07:09", subSystem: "Refrigeration", event: "Too Cold"))
+        self.alerts?.append(Alert(date: "11/16/18", time: "08:08:11", subSystem: "Control System", event: "AC Low"))
+        self.alerts?.append(Alert(date: "11/18/18", time: "19:02:28", subSystem: "Vending Mechanism", event: "Column JAM"))
 
         
     }
