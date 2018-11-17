@@ -35,6 +35,7 @@ class DEXContainerViewController: UIViewController, SegmentControlDelegate {
         case 0:
             self.dexProcessVC?.view.isHidden = false
             self.dexAuditVC?.view.isHidden = true
+            self.dexAlertsVC?.view.isHidden = true
 //            pickUpVC?.view.isHidden = true
 //            deliveryVC?.view.isHidden = true
             
@@ -44,16 +45,17 @@ class DEXContainerViewController: UIViewController, SegmentControlDelegate {
         case 1:
             self.dexAuditVC?.view.isHidden = false
             self.dexProcessVC?.view.isHidden = true
+            self.dexAlertsVC?.view.isHidden = true
             //            pickUpVC?.view.isHidden = true
             //            deliveryVC?.view.isHidden = true
             
             
             self.view.bringSubviewToFront((self.dexAuditVC?.view)!)
             
-//        case 2:
-//            vehicleVC?.view.isHidden = true
-//            pickUpVC?.view.isHidden = true
-//            deliveryVC?.view.isHidden = false
+        case 2:
+            self.dexAuditVC?.view.isHidden = true
+            self.dexProcessVC?.view.isHidden = true
+            self.dexAlertsVC?.view.isHidden = false
             
 //            self.view.bringSubview(toFront: (deliveryVC?.view)!)
             
@@ -82,6 +84,13 @@ class DEXContainerViewController: UIViewController, SegmentControlDelegate {
         self.view.addSubview((self.dexAuditVC?.view)!)
         self.dexAuditVC?.view.frame = self.view.bounds
         self.dexAuditVC?.didMove(toParent: self)
+        
+        let dexAlertsSB: UIStoryboard = UIStoryboard(name: "DEXAlerts", bundle: nil)
+        self.dexAlertsVC = dexAlertsSB.instantiateViewController(withIdentifier: "IDDEXAlertsStoryboard") as? DEXAlertsViewController
+        self.addChild(self.dexAlertsVC!)
+        self.view.addSubview((self.dexAlertsVC?.view)!)
+        self.dexAlertsVC?.view.frame = self.view.bounds
+        self.dexAlertsVC?.didMove(toParent: self)
         
 /*
         

@@ -13,6 +13,7 @@ class DEXAuditViewController: UIViewController, UITableViewDataSource, UITableVi
     
     @IBOutlet weak var auditSegmentControl: UISegmentedControl!
     @IBOutlet weak var auditTableView: UITableView!
+    @IBOutlet weak var rawTextView: UITextView!
     
     var deviceData: [DeviceData]?
     var sectionHeaders: [String]?
@@ -25,8 +26,12 @@ class DEXAuditViewController: UIViewController, UITableViewDataSource, UITableVi
         self.auditTableView.delegate = self
         self.auditTableView.dataSource = self
         
+        auditSegmentControl.selectedSegmentIndex = 0
+        auditSegmentValueChanged(auditSegmentControl)
+        
         loadDeviceData()
     }
+    
     
 
     /*
@@ -39,6 +44,20 @@ class DEXAuditViewController: UIViewController, UITableViewDataSource, UITableVi
     }
     */
     @IBAction func auditSegmentValueChanged(_ sender: UISegmentedControl) {
+        
+        switch auditSegmentControl.selectedSegmentIndex {
+            case 0:
+                self.auditTableView.isHidden = false
+                self.rawTextView.isHidden = true
+            case 1:
+                self.auditTableView.isHidden = true
+                self.rawTextView.isHidden = false
+            default:
+                break
+            
+        }
+        
+        
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -48,9 +67,17 @@ class DEXAuditViewController: UIViewController, UITableViewDataSource, UITableVi
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "IDAuditTableViewCell", for: indexPath) as! AuditTableViewCell
         
-        cell.deviceID.text = self.deviceData?[indexPath.row].deviceID ?? " "
-        cell.deviceName.text = self.deviceData?[indexPath.row].deviceName ?? " "
-        cell.deviceDescription.text = self.deviceData?[indexPath.row].deviceDescription ?? " "
+        let index = indexPath.row + (indexPath.section * (self.sectionHeaders?.count ?? 0))
+        
+        if index % 2 == 0 {
+           cell.backgroundColor = UIColor.groupTableViewBackground
+        } else {
+           cell.backgroundColor = UIColor.white
+        }
+
+        cell.deviceID.text = self.deviceData?[index].deviceID ?? " "
+        cell.deviceName.text = self.deviceData?[index].deviceName ?? " "
+        cell.deviceDescription.text = self.deviceData?[index].deviceDescription ?? " "
         
         cell.layer.cornerRadius = 10.0
         cell.clipsToBounds = true
@@ -72,6 +99,13 @@ class DEXAuditViewController: UIViewController, UITableViewDataSource, UITableVi
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return self.sectionHeaders?[section]
+    }
+    
+    func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+        
+        let header = view as? UITableViewHeaderFooterView
+        header?.textLabel?.font = UIFont.boldSystemFont(ofSize: 22.0)
+        header?.textLabel?.textColor = UIColor.red
     }
 
     

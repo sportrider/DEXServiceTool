@@ -130,11 +130,11 @@
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="634" id="xAM-zm-t0w"/>
                                         </constraints>
                                         <segments>
-                                            <segment title="First"/>
-                                            <segment title="Second"/>
-                                            <segment title=""/>
-                                            <segment title=""/>
-                                            <segment title=""/>
+                                            <segment title="Process"/>
+                                            <segment title="Audit"/>
+                                            <segment title="Alerts"/>
+                                            <segment title="POG"/>
+                                            <segment title="Help"/>
                                         </segments>
                                         <connections>
                                             <action selector="didChangeSegmentValue:" destination="RlT-qO-jaP" eventType="valueChanged" id="uGa-Pg-Ohc"/>

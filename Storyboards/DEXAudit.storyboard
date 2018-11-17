@@ -46,13 +46,20 @@
                                     <constraint firstAttribute="height" constant="40" id="kRN-Tt-K9z"/>
                                 </constraints>
                                 <segments>
-                                    <segment title="First"/>
-                                    <segment title="Second"/>
+                                    <segment title="Parsed"/>
+                                    <segment title="Raw"/>
                                 </segments>
                                 <connections>
                                     <action selector="auditSegmentValueChanged:" destination="S38-zT-ZId" eventType="valueChanged" id="7Mn-MO-FVg"/>
                                 </connections>
                             </segmentedControl>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Sxa-PD-CA0">
+                                <rect key="frame" x="20" y="140" width="794" height="952"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="B0Q-tc-okc">
                                 <rect key="frame" x="20" y="140" width="794" height="952"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -116,21 +123,26 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="fpC-Ws-S0F" firstAttribute="trailing" secondItem="Sxa-PD-CA0" secondAttribute="trailing" constant="20" id="64X-SW-PCc"/>
                             <constraint firstItem="fpC-Ws-S0F" firstAttribute="bottom" secondItem="B0Q-tc-okc" secondAttribute="bottom" constant="20" id="BII-fY-6Bp"/>
                             <constraint firstItem="2J7-pj-Qd9" firstAttribute="top" secondItem="Z7K-lZ-GXS" secondAttribute="top" id="DjM-pc-eHL"/>
+                            <constraint firstItem="Sxa-PD-CA0" firstAttribute="top" secondItem="xsi-ex-WHr" secondAttribute="bottom" constant="20" id="G7h-Ax-1Pu"/>
                             <constraint firstItem="2J7-pj-Qd9" firstAttribute="trailing" secondItem="fpC-Ws-S0F" secondAttribute="trailing" id="IQx-Vh-NrG"/>
                             <constraint firstItem="xsi-ex-WHr" firstAttribute="top" secondItem="2J7-pj-Qd9" secondAttribute="bottom" constant="20" id="PJc-x2-OK3"/>
                             <constraint firstItem="B0Q-tc-okc" firstAttribute="leading" secondItem="fpC-Ws-S0F" secondAttribute="leading" constant="20" id="akh-q6-Jvy"/>
                             <constraint firstItem="2J7-pj-Qd9" firstAttribute="leading" secondItem="fpC-Ws-S0F" secondAttribute="leading" id="bUd-Y4-RB5"/>
+                            <constraint firstItem="fpC-Ws-S0F" firstAttribute="bottom" secondItem="Sxa-PD-CA0" secondAttribute="bottom" constant="20" id="f7a-gn-FvW"/>
                             <constraint firstItem="xsi-ex-WHr" firstAttribute="centerX" secondItem="Z7K-lZ-GXS" secondAttribute="centerX" id="fhG-A0-kan"/>
                             <constraint firstItem="fpC-Ws-S0F" firstAttribute="trailing" secondItem="B0Q-tc-okc" secondAttribute="trailing" constant="20" id="h0Q-sM-oOq"/>
                             <constraint firstItem="B0Q-tc-okc" firstAttribute="top" secondItem="xsi-ex-WHr" secondAttribute="bottom" constant="20" id="sct-oO-lb0"/>
+                            <constraint firstItem="Sxa-PD-CA0" firstAttribute="leading" secondItem="fpC-Ws-S0F" secondAttribute="leading" constant="20" id="xJ6-qq-6Eh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fpC-Ws-S0F"/>
                     </view>
                     <connections>
                         <outlet property="auditSegmentControl" destination="xsi-ex-WHr" id="bt9-8E-6bA"/>
                         <outlet property="auditTableView" destination="B0Q-tc-okc" id="6JQ-uK-CfI"/>
+                        <outlet property="rawTextView" destination="Sxa-PD-CA0" id="dkU-0L-OW2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hbc-RQ-c2x" userLabel="First Responder" sceneMemberID="firstResponder"/>

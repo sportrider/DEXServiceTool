@@ -24,7 +24,21 @@ struct DeviceData: Codable {
 }
 
     
+struct Alerts: Codable {
     
+    public let date: String?
+    public let time: String?
+    public let subSystem: String?
+    public let event: String?
+
+    
+    enum CodingKeys: String, CodingKey {
+        case date = "Date"
+        case time = "Time"
+        case subSystem = "SubSystem"
+        case event = "Event"
+    }
+}
     
     
 
