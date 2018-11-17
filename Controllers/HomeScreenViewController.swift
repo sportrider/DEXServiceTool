@@ -57,4 +57,11 @@ extension UIViewController {
 
     }
     
+    func sizeTableView(_ tv: UITableView, height: CGFloat) {
+        tv.estimatedRowHeight = height
+        tv.rowHeight = UITableView.automaticDimension
+        tv.estimatedSectionHeaderHeight = height
+        tv.sectionHeaderHeight = UITableView.automaticDimension
+    }
+    
 }

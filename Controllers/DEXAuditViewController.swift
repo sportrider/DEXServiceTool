@@ -32,6 +32,11 @@ class DEXAuditViewController: UIViewController, UITableViewDataSource, UITableVi
         loadDeviceData()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        
+        sizeTableView(self.auditTableView, height: 40)
+        
+    }
     
 
     /*
@@ -90,12 +95,6 @@ class DEXAuditViewController: UIViewController, UITableViewDataSource, UITableVi
     func numberOfSections(in tableView: UITableView) -> Int {
         return self.sectionHeaders?.count ?? 1
     }
-    
-//    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-//        let headerView = UIView()
-//        headerView.backgroundColor = UIColor.red
-//        return headerView
- //   }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return self.sectionHeaders?[section]

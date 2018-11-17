@@ -25,6 +25,9 @@ class DEXAlertsViewController: UIViewController, UITableViewDelegate, UITableVie
         alertsTV.dataSource = self
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        sizeTableView(self.alertsTV, height: 40)
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.alerts?.count ?? 0
@@ -59,12 +62,12 @@ class DEXAlertsViewController: UIViewController, UITableViewDelegate, UITableVie
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         
         let headerView = UIView()
-        let headerCell = tableView.dequeueReusableCell(withIdentifier: "IDDEXAlertsTableViewHeaderCell") as! DEXAlertsTableViewCell
+        let headerCell = tableView.dequeueReusableCell(withIdentifier: "IDDEXAlertsTableViewHeaderCell") as! DEXAlertsTableViewHeaderCell
         
-        headerCell.dateLabel.text = "Date"
-        headerCell.timeLabel.text = "Time"
-        headerCell.subSystemLabel.text = "Sub System"
-        headerCell.eventLabel.text = "Event"
+        headerCell.headerDateLbl.text = "Date"
+        headerCell.headerTimeLbl.text = "Time"
+        headerCell.headerSubSystemLbl.text = "Sub System"
+        headerCell.headerEventLbl.text = "Event"
         
         headerView.addSubview(headerCell)
         

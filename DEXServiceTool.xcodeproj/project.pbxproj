@@ -100,6 +100,9 @@
 		38883C3021991C6500D1BDEA /* DEXContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38883C2F21991C6500D1BDEA /* DEXContainerView.swift */; };
 		38883C3121991C6500D1BDEA /* DEXContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38883C2F21991C6500D1BDEA /* DEXContainerView.swift */; };
 		38883C3221991C6500D1BDEA /* DEXContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38883C2F21991C6500D1BDEA /* DEXContainerView.swift */; };
+		38B383A921A0B0410054857F /* DEXAlertsTableViewHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B383A821A0B0410054857F /* DEXAlertsTableViewHeaderCell.swift */; };
+		38B383AA21A0B0410054857F /* DEXAlertsTableViewHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B383A821A0B0410054857F /* DEXAlertsTableViewHeaderCell.swift */; };
+		38B383AB21A0B0410054857F /* DEXAlertsTableViewHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B383A821A0B0410054857F /* DEXAlertsTableViewHeaderCell.swift */; };
 		38CF38A621971F2F00179728 /* DevicesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CF38A521971F2F00179728 /* DevicesTableViewCell.swift */; };
 		38CF38A721971F2F00179728 /* DevicesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CF38A521971F2F00179728 /* DevicesTableViewCell.swift */; };
 		38CF38A821971F2F00179728 /* DevicesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CF38A521971F2F00179728 /* DevicesTableViewCell.swift */; };
@@ -181,6 +184,7 @@
 		386CA7992195167B00BDAEC2 /* DevicesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesViewController.swift; sourceTree = "<group>"; };
 		38883C2B2199140500D1BDEA /* DEXContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DEXContainerViewController.swift; sourceTree = "<group>"; };
 		38883C2F21991C6500D1BDEA /* DEXContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DEXContainerView.swift; sourceTree = "<group>"; };
+		38B383A821A0B0410054857F /* DEXAlertsTableViewHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DEXAlertsTableViewHeaderCell.swift; sourceTree = "<group>"; };
 		38CF38A521971F2F00179728 /* DevicesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesTableViewCell.swift; sourceTree = "<group>"; };
 		38CF38A9219721A600179728 /* DeviceViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DeviceViewViewController.swift; path = Controllers/DeviceViewViewController.swift; sourceTree = SOURCE_ROOT; };
 		38CF38AD2197220F00179728 /* DeviceView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DeviceView.storyboard; sourceTree = "<group>"; };
@@ -321,6 +325,7 @@
 				3864034E21A0572200BAA781 /* DEXAlertsTableViewCell.swift */,
 				3864573F21A0855B0015F356 /* DEXPOGTableViewCell.swift */,
 				3864574721A08E9D0015F356 /* DEXPOGTableViewHeaderCell.swift */,
+				38B383A821A0B0410054857F /* DEXAlertsTableViewHeaderCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -531,6 +536,7 @@
 				38402796218E088E00B310E9 /* MainTabBarViewController.swift in Sources */,
 				3824B0DC218FBE3E0069871E /* ConnectConfirmViewController.swift in Sources */,
 				3840279A218E388D00B310E9 /* RoundedTextField.swift in Sources */,
+				38B383A921A0B0410054857F /* DEXAlertsTableViewHeaderCell.swift in Sources */,
 				380B2586218DDEEA00C5305C /* AppDelegate.swift in Sources */,
 				38402792218E03D200B310E9 /* HomeScreenViewController.swift in Sources */,
 				38CF38A621971F2F00179728 /* DevicesTableViewCell.swift in Sources */,
@@ -565,6 +571,7 @@
 				38402793218E03D200B310E9 /* HomeScreenViewController.swift in Sources */,
 				38CF38AB219721A600179728 /* DeviceViewViewController.swift in Sources */,
 				38883C2D2199140500D1BDEA /* DEXContainerViewController.swift in Sources */,
+				38B383AA21A0B0410054857F /* DEXAlertsTableViewHeaderCell.swift in Sources */,
 				38518FE321991045003E4B31 /* DEXAuditViewController.swift in Sources */,
 				38518FE721991068003E4B31 /* DEXAlertsViewController.swift in Sources */,
 				3864035021A0572200BAA781 /* DEXAlertsTableViewCell.swift in Sources */,
@@ -598,6 +605,7 @@
 				38402794218E03D200B310E9 /* HomeScreenViewController.swift in Sources */,
 				38CF38AC219721A600179728 /* DeviceViewViewController.swift in Sources */,
 				38883C2E2199140500D1BDEA /* DEXContainerViewController.swift in Sources */,
+				38B383AB21A0B0410054857F /* DEXAlertsTableViewHeaderCell.swift in Sources */,
 				38518FE421991045003E4B31 /* DEXAuditViewController.swift in Sources */,
 				38518FE821991068003E4B31 /* DEXAlertsViewController.swift in Sources */,
 				3864035121A0572200BAA781 /* DEXAlertsTableViewCell.swift in Sources */,

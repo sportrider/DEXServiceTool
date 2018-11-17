@@ -35,6 +35,7 @@ class DEXContainerViewController: UIViewController, SegmentControlDelegate {
         self.dexProcessVC?.view.isHidden = true
         self.dexAlertsVC?.view.isHidden = true
         self.dexPOGVC?.view.isHidden = true
+        self.dexHelpVC?.view.isHidden = true
         
         switch segment {
         case 0:
@@ -52,6 +53,10 @@ class DEXContainerViewController: UIViewController, SegmentControlDelegate {
         case 3:
             self.dexPOGVC?.view.isHidden = false
             self.view.bringSubviewToFront((self.dexPOGVC?.view)!)
+            
+        case 4:
+            self.dexHelpVC?.view.isHidden = false
+            self.view.bringSubviewToFront((self.dexHelpVC?.view)!)
 
         default:
             break
@@ -90,6 +95,15 @@ class DEXContainerViewController: UIViewController, SegmentControlDelegate {
         self.view.addSubview((self.dexPOGVC?.view)!)
         self.dexPOGVC?.view.frame = self.view.bounds
         self.dexPOGVC?.didMove(toParent: self)
+        
+        
+        
+        let dexHelpSB: UIStoryboard = UIStoryboard(name: "DEXHelp", bundle: nil)
+        self.dexHelpVC = dexHelpSB.instantiateViewController(withIdentifier: "IDDEXHelpStoryboard") as? DEXHelpViewController
+        self.addChild(self.dexHelpVC!)
+        self.view.addSubview((self.dexHelpVC?.view)!)
+        self.dexHelpVC?.view.frame = self.view.bounds
+        self.dexHelpVC?.didMove(toParent: self)
         
 
         applyShadowTo(vw: self.view)

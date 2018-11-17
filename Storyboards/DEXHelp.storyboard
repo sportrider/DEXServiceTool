@@ -1,7 +1,46 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <scenes/>
+    <scenes>
+        <!--Help View Controller-->
+        <scene sceneID="YQ6-vt-AMG">
+            <objects>
+                <viewController storyboardIdentifier="IDDEXHelpStoryboard" useStoryboardIdentifierAsRestorationIdentifier="YES" id="RAv-gW-7eb" customClass="DEXHelpViewController" customModule="DEXServiceTool" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Nja-an-NJB">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="GWC-ZK-yCT">
+                                <rect key="frame" x="20" y="40" width="728" height="964"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="GWC-ZK-yCT" firstAttribute="leading" secondItem="w8i-gm-wZ2" secondAttribute="leading" constant="20" id="3hF-Uh-mHR"/>
+                            <constraint firstItem="w8i-gm-wZ2" firstAttribute="trailing" secondItem="GWC-ZK-yCT" secondAttribute="trailing" constant="20" id="V6O-Dc-rMW"/>
+                            <constraint firstItem="w8i-gm-wZ2" firstAttribute="bottom" secondItem="GWC-ZK-yCT" secondAttribute="bottom" constant="20" id="dgo-jJ-KV7"/>
+                            <constraint firstItem="GWC-ZK-yCT" firstAttribute="top" secondItem="w8i-gm-wZ2" secondAttribute="top" constant="20" id="rwE-ft-fhd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="w8i-gm-wZ2"/>
+                    </view>
+                    <connections>
+                        <outlet property="textView" destination="GWC-ZK-yCT" id="SzZ-Tf-fhO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pa8-em-GyW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="124" y="206"/>
+        </scene>
+    </scenes>
 </document>
