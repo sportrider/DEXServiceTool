@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3807243121A341CE00CB9515 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3807243021A341CE00CB9515 /* Media.xcassets */; };
+		3807243221A341CE00CB9515 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3807243021A341CE00CB9515 /* Media.xcassets */; };
+		3807243321A341CE00CB9515 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3807243021A341CE00CB9515 /* Media.xcassets */; };
 		380B2586218DDEEA00C5305C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380B2585218DDEEA00C5305C /* AppDelegate.swift */; };
 		380B2588218DDEEA00C5305C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380B2587218DDEEA00C5305C /* ViewController.swift */; };
 		380B258B218DDEEA00C5305C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 380B2589218DDEEA00C5305C /* Main.storyboard */; };
@@ -15,7 +18,6 @@
 		380B2593218DDEEB00C5305C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 380B2591218DDEEB00C5305C /* LaunchScreen.storyboard */; };
 		380B259E218DDEEC00C5305C /* DEXServiceToolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380B259D218DDEEC00C5305C /* DEXServiceToolTests.swift */; };
 		380B25A9218DDEEC00C5305C /* DEXServiceToolUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380B25A8218DDEEC00C5305C /* DEXServiceToolUITests.swift */; };
-		380B25B8218DE0D200C5305C /* DexTitle.png in Resources */ = {isa = PBXBuildFile; fileRef = 380B25B7218DE0D200C5305C /* DexTitle.png */; };
 		3814191921A0928B005EA5EA /* DEXPOG.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3814191821A0928B005EA5EA /* DEXPOG.storyboard */; };
 		3814191A21A0928B005EA5EA /* DEXPOG.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3814191821A0928B005EA5EA /* DEXPOG.storyboard */; };
 		3814191B21A0928B005EA5EA /* DEXPOG.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3814191821A0928B005EA5EA /* DEXPOG.storyboard */; };
@@ -28,9 +30,6 @@
 		3836372321974DFE00AC2763 /* DeviceViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3836372221974DFE00AC2763 /* DeviceViewTableViewCell.swift */; };
 		3836372421974DFE00AC2763 /* DeviceViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3836372221974DFE00AC2763 /* DeviceViewTableViewCell.swift */; };
 		3836372521974DFE00AC2763 /* DeviceViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3836372221974DFE00AC2763 /* DeviceViewTableViewCell.swift */; };
-		38363727219761A200AC2763 /* barGauge.png in Resources */ = {isa = PBXBuildFile; fileRef = 38363726219761A200AC2763 /* barGauge.png */; };
-		38363728219761A200AC2763 /* barGauge.png in Resources */ = {isa = PBXBuildFile; fileRef = 38363726219761A200AC2763 /* barGauge.png */; };
-		38363729219761A200AC2763 /* barGauge.png in Resources */ = {isa = PBXBuildFile; fileRef = 38363726219761A200AC2763 /* barGauge.png */; };
 		383D8AC221913EE000D0E765 /* DEXViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383D8AC121913EE000D0E765 /* DEXViewController.swift */; };
 		383D8AC321913EE000D0E765 /* DEXViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383D8AC121913EE000D0E765 /* DEXViewController.swift */; };
 		383D8AC421913EE000D0E765 /* DEXViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383D8AC121913EE000D0E765 /* DEXViewController.swift */; };
@@ -112,9 +111,6 @@
 		38CF38AE2197220F00179728 /* DeviceView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38CF38AD2197220F00179728 /* DeviceView.storyboard */; };
 		38CF38AF2197220F00179728 /* DeviceView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38CF38AD2197220F00179728 /* DeviceView.storyboard */; };
 		38CF38B02197220F00179728 /* DeviceView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38CF38AD2197220F00179728 /* DeviceView.storyboard */; };
-		38CF38B22197352700179728 /* bluetooth.png in Resources */ = {isa = PBXBuildFile; fileRef = 38CF38B12197352700179728 /* bluetooth.png */; };
-		38CF38B32197352700179728 /* bluetooth.png in Resources */ = {isa = PBXBuildFile; fileRef = 38CF38B12197352700179728 /* bluetooth.png */; };
-		38CF38B42197352700179728 /* bluetooth.png in Resources */ = {isa = PBXBuildFile; fileRef = 38CF38B12197352700179728 /* bluetooth.png */; };
 		38DD4B24219BA08C00A84568 /* AuditTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DD4B23219BA08C00A84568 /* AuditTableViewCell.swift */; };
 		38DD4B25219BA08C00A84568 /* AuditTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DD4B23219BA08C00A84568 /* AuditTableViewCell.swift */; };
 		38DD4B26219BA08C00A84568 /* AuditTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DD4B23219BA08C00A84568 /* AuditTableViewCell.swift */; };
@@ -141,6 +137,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3807243021A341CE00CB9515 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		380B2582218DDEEA00C5305C /* DEXServiceTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DEXServiceTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		380B2585218DDEEA00C5305C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		380B2587218DDEEA00C5305C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -155,12 +152,10 @@
 		380B25A4218DDEEC00C5305C /* DEXServiceToolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DEXServiceToolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		380B25A8218DDEEC00C5305C /* DEXServiceToolUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DEXServiceToolUITests.swift; sourceTree = "<group>"; };
 		380B25AA218DDEEC00C5305C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		380B25B7218DE0D200C5305C /* DexTitle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DexTitle.png; sourceTree = "<group>"; };
 		3814191821A0928B005EA5EA /* DEXPOG.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DEXPOG.storyboard; sourceTree = "<group>"; };
 		3824B0DB218FBE3E0069871E /* ConnectConfirmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectConfirmViewController.swift; sourceTree = "<group>"; };
 		3836371E21974D3200AC2763 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		3836372221974DFE00AC2763 /* DeviceViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceViewTableViewCell.swift; sourceTree = "<group>"; };
-		38363726219761A200AC2763 /* barGauge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = barGauge.png; sourceTree = "<group>"; };
 		383D8AC121913EE000D0E765 /* DEXViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DEXViewController.swift; sourceTree = "<group>"; };
 		383D8AC521913F0900D0E765 /* ToolKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolKitViewController.swift; sourceTree = "<group>"; };
 		383D8AC921913F1E00D0E765 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
@@ -188,7 +183,6 @@
 		38CF38A521971F2F00179728 /* DevicesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesTableViewCell.swift; sourceTree = "<group>"; };
 		38CF38A9219721A600179728 /* DeviceViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DeviceViewViewController.swift; path = Controllers/DeviceViewViewController.swift; sourceTree = SOURCE_ROOT; };
 		38CF38AD2197220F00179728 /* DeviceView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DeviceView.storyboard; sourceTree = "<group>"; };
-		38CF38B12197352700179728 /* bluetooth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bluetooth.png; sourceTree = "<group>"; };
 		38DD4B23219BA08C00A84568 /* AuditTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuditTableViewCell.swift; sourceTree = "<group>"; };
 		38DD4B28219BA4CF00A84568 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -221,12 +215,12 @@
 		380B2579218DDEEA00C5305C = {
 			isa = PBXGroup;
 			children = (
+				3807243021A341CE00CB9515 /* Media.xcassets */,
 				38DD4B27219BA49900A84568 /* Model */,
 				3813CB9521978B9500069F4D /* CustomControls */,
 				38402790218DFF8200B310E9 /* Storyboards */,
 				3840278B218DFF3400B310E9 /* Views */,
 				3840278A218DFF2400B310E9 /* Controllers */,
-				380B25B6218DE0D200C5305C /* images */,
 				380B2584218DDEEA00C5305C /* DEXServiceTool */,
 				380B259C218DDEEC00C5305C /* DEXServiceToolTests */,
 				380B25A7218DDEEC00C5305C /* DEXServiceToolUITests */,
@@ -272,16 +266,6 @@
 				380B25AA218DDEEC00C5305C /* Info.plist */,
 			);
 			path = DEXServiceToolUITests;
-			sourceTree = "<group>";
-		};
-		380B25B6218DE0D200C5305C /* images */ = {
-			isa = PBXGroup;
-			children = (
-				38363726219761A200AC2763 /* barGauge.png */,
-				38CF38B12197352700179728 /* bluetooth.png */,
-				380B25B7218DE0D200C5305C /* DexTitle.png */,
-			);
-			path = images;
 			sourceTree = "<group>";
 		};
 		3813CB9521978B9500069F4D /* CustomControls */ = {
@@ -460,12 +444,10 @@
 			files = (
 				3851900221991141003E4B31 /* DEXHelp.storyboard in Resources */,
 				380B2593218DDEEB00C5305C /* LaunchScreen.storyboard in Resources */,
-				38CF38B22197352700179728 /* bluetooth.png in Resources */,
 				38CF38AE2197220F00179728 /* DeviceView.storyboard in Resources */,
 				3814191921A0928B005EA5EA /* DEXPOG.storyboard in Resources */,
+				3807243121A341CE00CB9515 /* Media.xcassets in Resources */,
 				380B2590218DDEEB00C5305C /* Assets.xcassets in Resources */,
-				380B25B8218DE0D200C5305C /* DexTitle.png in Resources */,
-				38363727219761A200AC2763 /* barGauge.png in Resources */,
 				38518FF2219910DD003E4B31 /* DEXProcess.storyboard in Resources */,
 				380B258B218DDEEA00C5305C /* Main.storyboard in Resources */,
 				38518FF6219910FE003E4B31 /* DEXAudit.storyboard in Resources */,
@@ -478,14 +460,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				38CF38B32197352700179728 /* bluetooth.png in Resources */,
 				3814191A21A0928B005EA5EA /* DEXPOG.storyboard in Resources */,
-				38363728219761A200AC2763 /* barGauge.png in Resources */,
 				3840279F218E538D00B310E9 /* ConnectConfirm.storyboard in Resources */,
 				3851900321991141003E4B31 /* DEXHelp.storyboard in Resources */,
 				38518FF3219910DD003E4B31 /* DEXProcess.storyboard in Resources */,
 				38518FFB21991115003E4B31 /* DEXAlerts.storyboard in Resources */,
 				38518FF7219910FE003E4B31 /* DEXAudit.storyboard in Resources */,
+				3807243221A341CE00CB9515 /* Media.xcassets in Resources */,
 				38CF38AF2197220F00179728 /* DeviceView.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -494,14 +475,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				38CF38B42197352700179728 /* bluetooth.png in Resources */,
 				3814191B21A0928B005EA5EA /* DEXPOG.storyboard in Resources */,
-				38363729219761A200AC2763 /* barGauge.png in Resources */,
 				384027A0218E538D00B310E9 /* ConnectConfirm.storyboard in Resources */,
 				3851900421991141003E4B31 /* DEXHelp.storyboard in Resources */,
 				38518FF4219910DD003E4B31 /* DEXProcess.storyboard in Resources */,
 				38518FFC21991115003E4B31 /* DEXAlerts.storyboard in Resources */,
 				38518FF8219910FE003E4B31 /* DEXAudit.storyboard in Resources */,
+				3807243321A341CE00CB9515 /* Media.xcassets in Resources */,
 				38CF38B02197220F00179728 /* DeviceView.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -68,6 +68,7 @@ class DEXContainerViewController: UIViewController, SegmentControlDelegate {
     {
         let dexProcessSB: UIStoryboard = UIStoryboard(name: "DEXProcess", bundle: nil)
         self.dexProcessVC = dexProcessSB.instantiateViewController(withIdentifier: "IDDEXProcessStoryboard") as? DEXProcessViewController
+        self.dexProcessVC!.view.layer.cornerRadius = 10
         self.addChild(dexProcessVC!)
         self.view.addSubview((self.dexProcessVC?.view)!)
         self.dexProcessVC?.view.frame = self.view.bounds
@@ -76,6 +77,7 @@ class DEXContainerViewController: UIViewController, SegmentControlDelegate {
         
         let dexAuditSB: UIStoryboard = UIStoryboard(name: "DEXAudit", bundle: nil)
         self.dexAuditVC = dexAuditSB.instantiateViewController(withIdentifier: "IDDEXAuditStoryboard") as? DEXAuditViewController
+        self.dexAuditVC!.view.layer.cornerRadius = 10
         self.addChild(self.dexAuditVC!)
         self.view.addSubview((self.dexAuditVC?.view)!)
         self.dexAuditVC?.view.frame = self.view.bounds
@@ -83,6 +85,7 @@ class DEXContainerViewController: UIViewController, SegmentControlDelegate {
         
         let dexAlertsSB: UIStoryboard = UIStoryboard(name: "DEXAlerts", bundle: nil)
         self.dexAlertsVC = dexAlertsSB.instantiateViewController(withIdentifier: "IDDEXAlertsStoryboard") as? DEXAlertsViewController
+        self.dexAuditVC!.view.layer.cornerRadius = 10
         self.addChild(self.dexAlertsVC!)
         self.view.addSubview((self.dexAlertsVC?.view)!)
         self.dexAlertsVC?.view.frame = self.view.bounds
@@ -91,6 +94,7 @@ class DEXContainerViewController: UIViewController, SegmentControlDelegate {
 
         let dexPOGSB: UIStoryboard = UIStoryboard(name: "DEXPOG", bundle: nil)
         self.dexPOGVC = dexPOGSB.instantiateViewController(withIdentifier: "IDDEXPOGStoryboard") as? DEXPOGViewController
+        self.dexPOGVC!.view.layer.cornerRadius = 10
         self.addChild(self.dexPOGVC!)
         self.view.addSubview((self.dexPOGVC?.view)!)
         self.dexPOGVC?.view.frame = self.view.bounds
@@ -100,6 +104,7 @@ class DEXContainerViewController: UIViewController, SegmentControlDelegate {
         
         let dexHelpSB: UIStoryboard = UIStoryboard(name: "DEXHelp", bundle: nil)
         self.dexHelpVC = dexHelpSB.instantiateViewController(withIdentifier: "IDDEXHelpStoryboard") as? DEXHelpViewController
+        self.dexHelpVC!.view.layer.cornerRadius = 10
         self.addChild(self.dexHelpVC!)
         self.view.addSubview((self.dexHelpVC?.view)!)
         self.dexHelpVC?.view.frame = self.view.bounds
@@ -107,7 +112,6 @@ class DEXContainerViewController: UIViewController, SegmentControlDelegate {
         
 
         applyShadowTo(vw: self.view)
-        self.view.layer.cornerRadius = 10
         
     }
     
@@ -116,7 +120,9 @@ class DEXContainerViewController: UIViewController, SegmentControlDelegate {
         vw.layer.shadowOpacity = 1
         vw.layer.shadowOffset = CGSize.zero
         vw.layer.shadowRadius = 10
+        vw.layer.cornerRadius = 10
         vw.layer.shouldRasterize = true
+
     }
     
     

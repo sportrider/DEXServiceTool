@@ -10,16 +10,39 @@ import UIKit
 
 class MainTabBarViewController: UITabBarController {
 
+    @IBOutlet weak var mainTabBar: UITabBar!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
-        self.title = "Devices"
         self.navigationItem.setHidesBackButton(true, animated:true)
     }
     
+/*
+    override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
+        
+        switch self.selectedIndex {
+            
+            case 0:
+                    self.title = "Devices"
+            case 1:
+                    self.title = "Home"
+            case 2:
+                    self.title = "DEX"
+            case 3:
+                    self.title = "Toolkit"
+            case 4:
+                    self.title = "Help"
+            default:
+            
+                return
 
+        }
+        
+    }
+ */
+    
     /*
     // MARK: - Navigation
 

@@ -112,7 +112,7 @@
             </objects>
             <point key="canvasLocation" x="-245" y="-367"/>
         </scene>
-        <!--Item-->
+        <!--DEX-->
         <scene sceneID="G2z-Bh-F5A">
             <objects>
                 <viewController id="RlT-qO-jaP" customClass="DEXViewController" customModule="DEXServiceTool" customModuleProvider="target" sceneMemberID="viewController">
@@ -167,7 +167,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="bgH-AZ-vhi"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="P6h-b0-9po"/>
+                    <tabBarItem key="tabBarItem" title="DEX" image="dexGrey" selectedImage="dexTabBar.png" id="P6h-b0-9po"/>
                     <connections>
                         <outlet property="dexContainerView" destination="tbo-gv-qGz" id="uAe-W0-3ia"/>
                         <outlet property="segmentControl" destination="y8c-ck-dag" id="Afu-0g-dnm"/>
@@ -177,39 +177,39 @@
             </objects>
             <point key="canvasLocation" x="1173" y="507"/>
         </scene>
-        <!--Item-->
+        <!--ToolKit-->
         <scene sceneID="ZUj-CW-JZv">
             <objects>
                 <viewController id="KSx-qA-fo7" customClass="ToolKitViewController" customModule="DEXServiceTool" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4yG-eU-Meu">
                         <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="lC9-Vp-sDa"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="80w-yu-06a"/>
+                    <tabBarItem key="tabBarItem" title="ToolKit" image="toolkitGrey" selectedImage="toolkitGrey" id="80w-yu-06a"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eu5-rp-huc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1883" y="606"/>
         </scene>
-        <!--Item-->
+        <!--Settings-->
         <scene sceneID="tA9-VN-Gmh">
             <objects>
                 <viewController id="2Vp-qp-HRQ" customClass="SettingsViewController" customModule="DEXServiceTool" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="owL-j0-4OX">
                         <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="xru-nR-Yxe"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="K1O-so-aZM"/>
+                    <tabBarItem key="tabBarItem" title="Settings" image="settingsGrey" selectedImage="settingsGrey" id="K1O-so-aZM"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ojR-H1-9WG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="806" y="-1057"/>
         </scene>
-        <!--Item 1-->
+        <!--Home-->
         <scene sceneID="YhU-6h-oVx">
             <objects>
                 <viewController id="bM6-T9-6o5" customClass="HomeScreenViewController" customModule="DEXServiceTool" customModuleProvider="target" sceneMemberID="viewController">
@@ -438,7 +438,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="jI3-EE-ir7"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="TcR-uk-VF5"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="homeGrey" selectedImage="homeTabBar.png" id="TcR-uk-VF5">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
+                    </tabBarItem>
                     <connections>
                         <outlet property="batteryRemText" destination="OUh-VL-rNt" id="lWz-9m-ogd"/>
                         <outlet property="connConfBtn" destination="UXL-zy-gvn" id="raQ-EN-tje"/>
@@ -457,12 +459,13 @@
         <scene sceneID="tVJ-aC-Z19">
             <objects>
                 <tabBarController storyboardIdentifier="IDMainTabBarViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="aIq-jw-6bH" customClass="MainTabBarViewController" customModule="DEXServiceTool" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ueu-Ys-1eC">
+                    <tabBar key="tabBar" contentMode="scaleAspectFill" insetsLayoutMarginsFromSafeArea="NO" itemPositioning="centered" id="Ueu-Ys-1eC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
+                        <outlet property="mainTabBar" destination="Ueu-Ys-1eC" id="Uf0-WK-bCp"/>
                         <segue destination="bM6-T9-6o5" kind="relationship" relationship="viewControllers" id="DHY-6n-g6A"/>
                         <segue destination="fBL-LM-FSg" kind="relationship" relationship="viewControllers" id="s6Z-LL-rHd"/>
                         <segue destination="RlT-qO-jaP" kind="relationship" relationship="viewControllers" id="eCz-de-8Wz"/>
@@ -474,7 +477,7 @@
             </objects>
             <point key="canvasLocation" x="630" y="-367"/>
         </scene>
-        <!--Item-->
+        <!--Devices-->
         <scene sceneID="nww-81-vVh">
             <objects>
                 <viewController storyboardIdentifier="IDDevicesViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="fBL-LM-FSg" customClass="DevicesViewController" customModule="DEXServiceTool" customModuleProvider="target" sceneMemberID="viewController">
@@ -539,7 +542,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="aEI-zO-8j7"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="6MX-69-SOM"/>
+                    <tabBarItem key="tabBarItem" title="Devices" image="devicesGrey" selectedImage="devicesTabBar.png" id="6MX-69-SOM"/>
                     <connections>
                         <outlet property="devicesTV" destination="EnL-Ta-Rv8" id="2t2-Dn-Lo5"/>
                     </connections>
@@ -592,5 +595,13 @@
     </scenes>
     <resources>
         <image name="DexTitle.png" width="462" height="300"/>
+        <image name="devicesGrey" width="30" height="30"/>
+        <image name="devicesTabBar.png" width="60" height="60"/>
+        <image name="dexGrey" width="30" height="30"/>
+        <image name="dexTabBar.png" width="60" height="60"/>
+        <image name="homeGrey" width="30" height="30"/>
+        <image name="homeTabBar.png" width="60" height="60"/>
+        <image name="settingsGrey" width="30" height="30"/>
+        <image name="toolkitGrey" width="30" height="30"/>
     </resources>
 </document>

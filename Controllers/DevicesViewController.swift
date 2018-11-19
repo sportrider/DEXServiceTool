@@ -20,7 +20,14 @@ class DevicesViewController: UIViewController, UITableViewDelegate, UITableViewD
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        self.parent?.title = "Devices"
         
+        if let indexPath = devicesTV.indexPathForSelectedRow {
+            devicesTV.deselectRow(at: indexPath, animated: true)
+        }
     }
     
 
@@ -49,6 +56,7 @@ class DevicesViewController: UIViewController, UITableViewDelegate, UITableViewD
         cell.deviceImage.clipsToBounds = true
         cell.deviceImage.image = UIImage(named: "bluetooth")
         cell.deviceName?.text = "Device Name"
+        cell.accessoryType = .disclosureIndicator
         
         return cell
     }

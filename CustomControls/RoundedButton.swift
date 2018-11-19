@@ -19,7 +19,6 @@ class RoundedButton : UIButton {
         
         self.layer.cornerRadius = 15.0
         self.layer.borderWidth = 0.0
-//        self.layer.borderColor = UIColor.black.cgColor
         
         self.layer.backgroundColor = UIColor.groupTableViewBackground.cgColor
         self.titleLabel?.font = UIFont.boldSystemFont(ofSize: 18)
