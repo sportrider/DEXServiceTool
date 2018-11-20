@@ -40,26 +40,31 @@ class HomeScreenViewController: UIViewController {
     }
     */
     @IBAction func didTapConnectConfirm(_ sender: UIButton) {
-        viewConnectConfirmOver(viewController: self)
         
-//        let sb = UIStoryboard(name: "ConnectConfirm", bundle: nil)
-//        let newVC: ConnectConfirmViewController = sb.instantiateViewController(withIdentifier: "IDConnectConfirm") as! ConnectConfirmViewController
+        //  initialize message array for display - replace with actual messages
+        var ccMessages: [ConnectConfirmMessage] = []
         
-//        self.present(newVC, animated: true, completion: nil)
+        ccMessages.append(ConnectConfirmMessage(message: "message one"))
+        ccMessages.append(ConnectConfirmMessage(message: "Get the new view controller using segue.destination.  Pass the selected object to the new view controller"))
+        ccMessages.append(ConnectConfirmMessage(message: "message one"))
+        ccMessages.append(ConnectConfirmMessage(message: "In a storyboard based application, you will often want to do a little preparation before navigation override func prepare(for segue: UIStoryboardSegue, sender: Any"))
+        ////////
         
-        
+        viewConnectConfirmOver(viewController: self, messageArray: ccMessages)
     }
+
     
 }
 
 extension UIViewController {
     
-    func viewConnectConfirmOver(viewController: UIViewController) {
+    func viewConnectConfirmOver(viewController: UIViewController, messageArray: [ConnectConfirmMessage]?) {
         let sb = UIStoryboard(name: "ConnectConfirm", bundle: nil)
         let newVC: ConnectConfirmViewController = sb.instantiateViewController(withIdentifier: "IDConnectConfirm") as! ConnectConfirmViewController
         
+        newVC.ccMessages = messageArray
+        
         viewController.present(newVC, animated: true, completion: nil)
-
     }
     
     func sizeTableView(_ tv: UITableView, height: CGFloat) {

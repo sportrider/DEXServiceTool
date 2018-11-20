@@ -24,6 +24,15 @@
 		3824B0DC218FBE3E0069871E /* ConnectConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3824B0DB218FBE3E0069871E /* ConnectConfirmViewController.swift */; };
 		3824B0DD218FBE3E0069871E /* ConnectConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3824B0DB218FBE3E0069871E /* ConnectConfirmViewController.swift */; };
 		3824B0DE218FBE3E0069871E /* ConnectConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3824B0DB218FBE3E0069871E /* ConnectConfirmViewController.swift */; };
+		38260E8621A48FE900888D50 /* ConnectConfirmTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38260E8521A48FE900888D50 /* ConnectConfirmTableViewCell.swift */; };
+		38260E8721A48FE900888D50 /* ConnectConfirmTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38260E8521A48FE900888D50 /* ConnectConfirmTableViewCell.swift */; };
+		38260E8821A48FE900888D50 /* ConnectConfirmTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38260E8521A48FE900888D50 /* ConnectConfirmTableViewCell.swift */; };
+		38260E8A21A49E4C00888D50 /* DEXProcessTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38260E8921A49E4C00888D50 /* DEXProcessTableViewCell.swift */; };
+		38260E8B21A49E4C00888D50 /* DEXProcessTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38260E8921A49E4C00888D50 /* DEXProcessTableViewCell.swift */; };
+		38260E8C21A49E4C00888D50 /* DEXProcessTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38260E8921A49E4C00888D50 /* DEXProcessTableViewCell.swift */; };
+		38260E8E21A4A51400888D50 /* RawTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38260E8D21A4A51400888D50 /* RawTableViewCell.swift */; };
+		38260E8F21A4A51400888D50 /* RawTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38260E8D21A4A51400888D50 /* RawTableViewCell.swift */; };
+		38260E9021A4A51400888D50 /* RawTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38260E8D21A4A51400888D50 /* RawTableViewCell.swift */; };
 		3836371F21974D3200AC2763 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3836371E21974D3200AC2763 /* RoundedButton.swift */; };
 		3836372021974D3200AC2763 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3836371E21974D3200AC2763 /* RoundedButton.swift */; };
 		3836372121974D3200AC2763 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3836371E21974D3200AC2763 /* RoundedButton.swift */; };
@@ -154,6 +163,9 @@
 		380B25AA218DDEEC00C5305C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3814191821A0928B005EA5EA /* DEXPOG.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DEXPOG.storyboard; sourceTree = "<group>"; };
 		3824B0DB218FBE3E0069871E /* ConnectConfirmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectConfirmViewController.swift; sourceTree = "<group>"; };
+		38260E8521A48FE900888D50 /* ConnectConfirmTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectConfirmTableViewCell.swift; sourceTree = "<group>"; };
+		38260E8921A49E4C00888D50 /* DEXProcessTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DEXProcessTableViewCell.swift; sourceTree = "<group>"; };
+		38260E8D21A4A51400888D50 /* RawTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawTableViewCell.swift; sourceTree = "<group>"; };
 		3836371E21974D3200AC2763 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		3836372221974DFE00AC2763 /* DeviceViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceViewTableViewCell.swift; sourceTree = "<group>"; };
 		383D8AC121913EE000D0E765 /* DEXViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DEXViewController.swift; sourceTree = "<group>"; };
@@ -310,6 +322,9 @@
 				3864573F21A0855B0015F356 /* DEXPOGTableViewCell.swift */,
 				3864574721A08E9D0015F356 /* DEXPOGTableViewHeaderCell.swift */,
 				38B383A821A0B0410054857F /* DEXAlertsTableViewHeaderCell.swift */,
+				38260E8521A48FE900888D50 /* ConnectConfirmTableViewCell.swift */,
+				38260E8921A49E4C00888D50 /* DEXProcessTableViewCell.swift */,
+				38260E8D21A4A51400888D50 /* RawTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -514,6 +529,7 @@
 				380B2588218DDEEA00C5305C /* ViewController.swift in Sources */,
 				38883C2C2199140500D1BDEA /* DEXContainerViewController.swift in Sources */,
 				38402796218E088E00B310E9 /* MainTabBarViewController.swift in Sources */,
+				38260E8621A48FE900888D50 /* ConnectConfirmTableViewCell.swift in Sources */,
 				3824B0DC218FBE3E0069871E /* ConnectConfirmViewController.swift in Sources */,
 				3840279A218E388D00B310E9 /* RoundedTextField.swift in Sources */,
 				38B383A921A0B0410054857F /* DEXAlertsTableViewHeaderCell.swift in Sources */,
@@ -522,6 +538,8 @@
 				38CF38A621971F2F00179728 /* DevicesTableViewCell.swift in Sources */,
 				383D8ACA21913F1E00D0E765 /* SettingsViewController.swift in Sources */,
 				3864574021A0855B0015F356 /* DEXPOGTableViewCell.swift in Sources */,
+				38260E8E21A4A51400888D50 /* RawTableViewCell.swift in Sources */,
+				38260E8A21A49E4C00888D50 /* DEXProcessTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -534,12 +552,14 @@
 				38DD4B2A219BA4CF00A84568 /* MockData.swift in Sources */,
 				38518FEB2199108C003E4B31 /* DEXPOGViewController.swift in Sources */,
 				38DD4B25219BA08C00A84568 /* AuditTableViewCell.swift in Sources */,
+				38260E8B21A49E4C00888D50 /* DEXProcessTableViewCell.swift in Sources */,
 				383D8AC721913F0900D0E765 /* ToolKitViewController.swift in Sources */,
 				38518FDF21991026003E4B31 /* DEXProcessViewController.swift in Sources */,
 				3836372421974DFE00AC2763 /* DeviceViewTableViewCell.swift in Sources */,
 				383D8ACB21913F1E00D0E765 /* SettingsViewController.swift in Sources */,
 				3864574121A0855B0015F356 /* DEXPOGTableViewCell.swift in Sources */,
 				38518FEF219910AC003E4B31 /* DEXHelpViewController.swift in Sources */,
+				38260E8F21A4A51400888D50 /* RawTableViewCell.swift in Sources */,
 				383D8AC321913EE000D0E765 /* DEXViewController.swift in Sources */,
 				38402797218E088E00B310E9 /* MainTabBarViewController.swift in Sources */,
 				38CF38A721971F2F00179728 /* DevicesTableViewCell.swift in Sources */,
@@ -550,6 +570,7 @@
 				3824B0DD218FBE3E0069871E /* ConnectConfirmViewController.swift in Sources */,
 				38402793218E03D200B310E9 /* HomeScreenViewController.swift in Sources */,
 				38CF38AB219721A600179728 /* DeviceViewViewController.swift in Sources */,
+				38260E8721A48FE900888D50 /* ConnectConfirmTableViewCell.swift in Sources */,
 				38883C2D2199140500D1BDEA /* DEXContainerViewController.swift in Sources */,
 				38B383AA21A0B0410054857F /* DEXAlertsTableViewHeaderCell.swift in Sources */,
 				38518FE321991045003E4B31 /* DEXAuditViewController.swift in Sources */,
@@ -568,12 +589,14 @@
 				38DD4B2B219BA4CF00A84568 /* MockData.swift in Sources */,
 				38518FEC2199108C003E4B31 /* DEXPOGViewController.swift in Sources */,
 				38DD4B26219BA08C00A84568 /* AuditTableViewCell.swift in Sources */,
+				38260E8C21A49E4C00888D50 /* DEXProcessTableViewCell.swift in Sources */,
 				383D8AC821913F0900D0E765 /* ToolKitViewController.swift in Sources */,
 				38518FE021991026003E4B31 /* DEXProcessViewController.swift in Sources */,
 				3836372521974DFE00AC2763 /* DeviceViewTableViewCell.swift in Sources */,
 				383D8ACC21913F1E00D0E765 /* SettingsViewController.swift in Sources */,
 				3864574221A0855B0015F356 /* DEXPOGTableViewCell.swift in Sources */,
 				38518FF0219910AC003E4B31 /* DEXHelpViewController.swift in Sources */,
+				38260E9021A4A51400888D50 /* RawTableViewCell.swift in Sources */,
 				383D8AC421913EE000D0E765 /* DEXViewController.swift in Sources */,
 				38402798218E088E00B310E9 /* MainTabBarViewController.swift in Sources */,
 				38CF38A821971F2F00179728 /* DevicesTableViewCell.swift in Sources */,
@@ -584,6 +607,7 @@
 				3824B0DE218FBE3E0069871E /* ConnectConfirmViewController.swift in Sources */,
 				38402794218E03D200B310E9 /* HomeScreenViewController.swift in Sources */,
 				38CF38AC219721A600179728 /* DeviceViewViewController.swift in Sources */,
+				38260E8821A48FE900888D50 /* ConnectConfirmTableViewCell.swift in Sources */,
 				38883C2E2199140500D1BDEA /* DEXContainerViewController.swift in Sources */,
 				38B383AB21A0B0410054857F /* DEXAlertsTableViewHeaderCell.swift in Sources */,
 				38518FE421991045003E4B31 /* DEXAuditViewController.swift in Sources */,

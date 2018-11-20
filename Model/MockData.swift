@@ -56,3 +56,32 @@ struct POG: Codable {
 }
 
 
+struct ConnectConfirmMessage: Codable {
+    
+    public let message: String?
+    
+    enum CodingKeys: String, CodingKey {
+        case message = "Message"
+
+    }
+}
+
+struct ProcessMessage: Codable {
+    
+    public let message: String?
+    
+    enum CodingKeys: String, CodingKey {
+        case message = "Message"
+        
+    }
+}
+
+struct RawMessage: Codable {
+    
+    public let message: String?
+    
+    enum CodingKeys: String, CodingKey {
+        case message = "Message"
+        
+    }
+}

@@ -47,7 +47,17 @@ class DeviceViewViewController: UIViewController, UITableViewDataSource, UITable
     }
     
     func didTapConnectButton() {
-        viewConnectConfirmOver(viewController: self)
+        
+ //  initialize message array for display - replace with actual messages
+        var ccMessages: [ConnectConfirmMessage] = []
+        
+        ccMessages.append(ConnectConfirmMessage(message: "message one"))
+        ccMessages.append(ConnectConfirmMessage(message: "Get the new view controller using segue.destination.  Pass the selected object to the new view controller"))
+        ccMessages.append(ConnectConfirmMessage(message: "message one"))
+        ccMessages.append(ConnectConfirmMessage(message: "In a storyboard based application, you will often want to do a little preparation before navigation override func prepare(for segue: UIStoryboardSegue, sender: Any"))
+ ////////
+        
+        viewConnectConfirmOver(viewController: self, messageArray: ccMessages)
     }
     
     func didTapPairButton() {

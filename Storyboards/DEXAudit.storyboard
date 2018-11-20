@@ -60,11 +60,11 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="B0Q-tc-okc">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="IDAuditTableView" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="B0Q-tc-okc">
                                 <rect key="frame" x="20" y="140" width="794" height="952"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="IDAuditTableViewCell" id="MMe-TL-k7N" customClass="AuditTableViewCell" customModule="DEXServiceTool" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="RIDAuditTableViewCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="IDAuditTableViewCell" id="MMe-TL-k7N" customClass="AuditTableViewCell" customModule="DEXServiceTool" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="794" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="MMe-TL-k7N" id="Flw-Ra-sUz">
@@ -116,6 +116,31 @@
                                             <outlet property="deviceDescription" destination="VYe-pk-G7h" id="der-0h-DOs"/>
                                             <outlet property="deviceID" destination="55k-Ly-BP3" id="67d-4R-c1h"/>
                                             <outlet property="deviceName" destination="0rc-Nh-20O" id="N0n-6v-ZRJ"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="IDRawTableViewCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="IDRawTableViewCell" id="w3K-rd-R5Z" customClass="RawTableViewCell" customModule="DEXServiceTool" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="72" width="794" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="ID" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="w3K-rd-R5Z" id="c25-Li-a6A">
+                                            <rect key="frame" x="0.0" y="0.0" width="794" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SEc-Ju-6b9">
+                                                    <rect key="frame" x="17" y="13" width="760" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="SEc-Ju-6b9" secondAttribute="bottom" constant="2" id="Qdu-JW-Kax"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="SEc-Ju-6b9" secondAttribute="trailing" constant="2" id="Yec-fd-1ni"/>
+                                                <constraint firstItem="SEc-Ju-6b9" firstAttribute="leading" secondItem="c25-Li-a6A" secondAttribute="leadingMargin" constant="2" id="i7c-di-4Wl"/>
+                                                <constraint firstItem="SEc-Ju-6b9" firstAttribute="top" secondItem="c25-Li-a6A" secondAttribute="topMargin" constant="2" id="sOe-mt-mqA"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="rawMessageLbl" destination="SEc-Ju-6b9" id="Zas-tS-vdA"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

@@ -31,6 +31,11 @@ class DEXContainerViewController: UIViewController, SegmentControlDelegate {
     
     func didSelectSegment(segment: Int) {
         
+        ////////////////
+        // imitialize view controller properties here
+        ///////////////
+    
+        
         self.dexAuditVC?.view.isHidden = true
         self.dexProcessVC?.view.isHidden = true
         self.dexAlertsVC?.view.isHidden = true

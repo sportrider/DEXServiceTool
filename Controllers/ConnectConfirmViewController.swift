@@ -8,14 +8,47 @@
 
 import UIKit
 
-class ConnectConfirmViewController: UIViewController {
+class ConnectConfirmViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    var ccMessages: [ConnectConfirmMessage]?
+
+    @IBOutlet weak var ccTV: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.ccTV.delegate = self
+        self.ccTV.dataSource = self
     }
     
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        return self.ccMessages?.count ?? 0
+        
+    }
+    
+    func tableView(_ tableView: UITableView,
+                            heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 132
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = ccTV.dequeueReusableCell(withIdentifier: "IDConnectConfirmTableViewCell", for: indexPath) as! ConnectConfirmTableViewCell
+        
+        cell.messageLbl.text = self.ccMessages?[indexPath.row].message
+        
+        if indexPath.row % 2 == 0 {
+            cell.backgroundColor = UIColor.groupTableViewBackground
+        }
+        
+        return cell
+    }
 
     /*
     // MARK: - Navigation

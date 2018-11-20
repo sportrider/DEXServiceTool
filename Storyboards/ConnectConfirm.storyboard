@@ -106,13 +106,37 @@
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <state key="normal" title="Scan DEX Device"/>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="bPc-bY-s9C">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="FDh-er-7SC">
                                 <rect key="frame" x="20" y="210.5" width="794" height="831.5"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="IDConnectConfirmTableViewCell" id="hbv-3P-vzr" customClass="ConnectConfirmTableViewCell" customModule="DEXServiceTool" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="794" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hbv-3P-vzr" id="25b-Ts-Rud">
+                                            <rect key="frame" x="0.0" y="0.0" width="794" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7LA-An-H5Z">
+                                                    <rect key="frame" x="17" y="13" width="760" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="7LA-An-H5Z" secondAttribute="bottom" constant="2" id="CI2-Sy-OCK"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="7LA-An-H5Z" secondAttribute="trailing" constant="2" id="KnF-8I-LRD"/>
+                                                <constraint firstItem="7LA-An-H5Z" firstAttribute="top" secondItem="25b-Ts-Rud" secondAttribute="topMargin" constant="2" id="nTU-d3-O8n"/>
+                                                <constraint firstItem="7LA-An-H5Z" firstAttribute="leading" secondItem="25b-Ts-Rud" secondAttribute="leadingMargin" constant="2" id="rWb-36-U4e"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="messageLbl" destination="7LA-An-H5Z" id="kvI-DC-Ijg"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -120,21 +144,21 @@
                             <constraint firstItem="2we-Nb-XTS" firstAttribute="trailing" secondItem="syn-sY-JG8" secondAttribute="trailing" constant="20" id="30V-eC-ZXR"/>
                             <constraint firstItem="syn-sY-JG8" firstAttribute="leading" secondItem="yz1-cI-idj" secondAttribute="trailing" constant="20" id="58T-My-TSN"/>
                             <constraint firstItem="Rpa-b5-j5d" firstAttribute="trailing" secondItem="dzI-X2-Kca" secondAttribute="trailing" id="6H9-du-Jdi"/>
-                            <constraint firstItem="bPc-bY-s9C" firstAttribute="leading" secondItem="2we-Nb-XTS" secondAttribute="leading" constant="20" id="9lf-dq-YCh"/>
+                            <constraint firstItem="2we-Nb-XTS" firstAttribute="trailing" secondItem="FDh-er-7SC" secondAttribute="trailing" constant="20" id="9gV-vh-3je"/>
                             <constraint firstItem="syn-sY-JG8" firstAttribute="top" secondItem="dzI-X2-Kca" secondAttribute="bottom" constant="18" id="D5m-C4-4of"/>
                             <constraint firstItem="kCV-nB-rnI" firstAttribute="top" secondItem="dzI-X2-Kca" secondAttribute="bottom" constant="18" id="DHP-u4-gis"/>
                             <constraint firstItem="S7U-H2-i8K" firstAttribute="centerY" secondItem="Dsm-gG-Uhz" secondAttribute="centerY" id="FIM-TF-ig9"/>
                             <constraint firstItem="yz1-cI-idj" firstAttribute="centerY" secondItem="kCV-nB-rnI" secondAttribute="centerY" id="FbF-lV-KPt"/>
-                            <constraint firstItem="2we-Nb-XTS" firstAttribute="bottom" secondItem="bPc-bY-s9C" secondAttribute="bottom" constant="20" id="Hla-po-myV"/>
-                            <constraint firstItem="bPc-bY-s9C" firstAttribute="top" secondItem="S7U-H2-i8K" secondAttribute="bottom" constant="20" id="OzJ-ln-dEu"/>
+                            <constraint firstItem="2we-Nb-XTS" firstAttribute="bottom" secondItem="FDh-er-7SC" secondAttribute="bottom" constant="20" id="Hmv-Rd-OrE"/>
+                            <constraint firstItem="FDh-er-7SC" firstAttribute="top" secondItem="S7U-H2-i8K" secondAttribute="bottom" constant="20" id="Img-NA-VSv"/>
                             <constraint firstItem="kCV-nB-rnI" firstAttribute="leading" secondItem="2we-Nb-XTS" secondAttribute="leading" constant="20" id="Q8H-63-Foa"/>
                             <constraint firstItem="S7U-H2-i8K" firstAttribute="leading" secondItem="Dsm-gG-Uhz" secondAttribute="trailing" constant="20" id="Rjg-hd-MEX"/>
                             <constraint firstItem="dzI-X2-Kca" firstAttribute="top" secondItem="Rpa-b5-j5d" secondAttribute="bottom" id="a99-YB-Tii"/>
                             <constraint firstItem="yz1-cI-idj" firstAttribute="leading" secondItem="kCV-nB-rnI" secondAttribute="trailing" constant="20" id="bJx-ej-ZQb"/>
                             <constraint firstItem="dzI-X2-Kca" firstAttribute="trailing" secondItem="2we-Nb-XTS" secondAttribute="trailing" id="gHX-pw-zOT"/>
-                            <constraint firstItem="2we-Nb-XTS" firstAttribute="trailing" secondItem="bPc-bY-s9C" secondAttribute="trailing" constant="20" id="gNW-5x-7KC"/>
                             <constraint firstItem="Rpa-b5-j5d" firstAttribute="leading" secondItem="dzI-X2-Kca" secondAttribute="leading" id="hz0-sC-XLN"/>
                             <constraint firstItem="Rpa-b5-j5d" firstAttribute="top" secondItem="2we-Nb-XTS" secondAttribute="top" id="qXj-p0-aTX"/>
+                            <constraint firstItem="FDh-er-7SC" firstAttribute="leading" secondItem="2we-Nb-XTS" secondAttribute="leading" constant="20" id="quf-Dq-wCq"/>
                             <constraint firstItem="Dsm-gG-Uhz" firstAttribute="leading" secondItem="2we-Nb-XTS" secondAttribute="leading" constant="20" id="tOt-Xg-wSi"/>
                             <constraint firstItem="Dsm-gG-Uhz" firstAttribute="top" secondItem="kCV-nB-rnI" secondAttribute="bottom" constant="16" id="vNB-14-DZt"/>
                         </constraints>
@@ -142,6 +166,9 @@
                     </view>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="ccTV" destination="FDh-er-7SC" id="cr7-Yw-Jh0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gkk-92-mub" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

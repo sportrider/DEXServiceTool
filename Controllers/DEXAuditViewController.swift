@@ -15,27 +15,28 @@ class DEXAuditViewController: UIViewController, UITableViewDataSource, UITableVi
     @IBOutlet weak var auditTableView: UITableView!
     @IBOutlet weak var rawTextView: UITextView!
     
+    var showProcessView: Bool = false
+    
     var deviceData: [DeviceData]?
+    var rawMessagea: [RawMessage]?
     var sectionHeaders: [String]?
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        loadDeviceData()
         
+        self.showProcessView = true
         self.auditTableView.delegate = self
         self.auditTableView.dataSource = self
         
         auditSegmentControl.selectedSegmentIndex = 0
         auditSegmentValueChanged(auditSegmentControl)
-        
-        loadDeviceData()
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        
         sizeTableView(self.auditTableView, height: 40)
-        
     }
     
 
@@ -53,58 +54,106 @@ class DEXAuditViewController: UIViewController, UITableViewDataSource, UITableVi
         switch auditSegmentControl.selectedSegmentIndex {
             case 0:
                 self.auditTableView.isHidden = false
-                self.rawTextView.isHidden = true
+                showProcessView = true
             case 1:
-                self.auditTableView.isHidden = true
-                self.rawTextView.isHidden = false
+                showProcessView = false
             default:
                 break
-            
         }
         
-        
+        self.auditTableView.reloadData()
+
     }
     
+    func tableView(_ tableView: UITableView,
+                   heightForRowAt indexPath: IndexPath) -> CGFloat {
+        
+        if(showProcessView) {
+            return 44
+        }
+        else {
+            return 132
+        }
+    }
+    
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4   // set for demo...
+        
+        if(showProcessView) {
+            return 4   // set for demo...  set with actual data segments
+        }
+        else {
+            return self.rawMessagea?.count ?? 0
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "IDAuditTableViewCell", for: indexPath) as! AuditTableViewCell
         
-        let index = indexPath.row + (indexPath.section * (self.sectionHeaders?.count ?? 0))
-        
-        if index % 2 == 0 {
-           cell.backgroundColor = UIColor.groupTableViewBackground
-        } else {
-           cell.backgroundColor = UIColor.white
-        }
+        if(showProcessView) {
 
-        cell.deviceID.text = self.deviceData?[index].deviceID ?? " "
-        cell.deviceName.text = self.deviceData?[index].deviceName ?? " "
-        cell.deviceDescription.text = self.deviceData?[index].deviceDescription ?? " "
-        
-        cell.layer.cornerRadius = 10.0
-        cell.clipsToBounds = true
-        
-        cell.selectionStyle = .none
-        
-        return cell
+            let cell = tableView.dequeueReusableCell(withIdentifier: "IDAuditTableViewCell", for: indexPath) as! AuditTableViewCell
+            let index = indexPath.row + (indexPath.section * (self.sectionHeaders?.count ?? 0))
+            
+            if index % 2 == 0 {
+               cell.backgroundColor = UIColor.groupTableViewBackground
+            } else {
+               cell.backgroundColor = UIColor.white
+            }
+
+            cell.deviceID.text = self.deviceData?[index].deviceID ?? " "
+            cell.deviceName.text = self.deviceData?[index].deviceName ?? " "
+            cell.deviceDescription.text = self.deviceData?[index].deviceDescription ?? " "
+            
+            cell.layer.cornerRadius = 10.0
+            cell.clipsToBounds = true
+            
+            cell.selectionStyle = .none
+            
+            return cell
+        }
+        else {
+            
+           let  cell = tableView.dequeueReusableCell(withIdentifier: "IDRawTableViewCell", for: indexPath) as! RawTableViewCell
+
+            cell.rawMessageLbl.text = self.rawMessagea?[indexPath.row].message
+            if indexPath.row % 2 == 0 {
+                cell.backgroundColor = UIColor.groupTableViewBackground
+            } else {
+                cell.backgroundColor = UIColor.white
+            }
+            
+            return cell
+            
+        }
+  
+//        return UITableViewCell()  // execution will not reach this point
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return self.sectionHeaders?.count ?? 1
+        if(showProcessView) {
+            return self.sectionHeaders?.count ?? 1
+        }
+        else {
+            return 1
+        }
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return self.sectionHeaders?[section]
+        if(showProcessView) {
+            return self.sectionHeaders?[section]
+        }
+        else {
+            return nil
+        }
     }
     
     func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
         
-        let header = view as? UITableViewHeaderFooterView
-        header?.textLabel?.font = UIFont.boldSystemFont(ofSize: 22.0)
-        header?.textLabel?.textColor = UIColor.red
+        if(showProcessView) {
+            let header = view as? UITableViewHeaderFooterView
+            header?.textLabel?.font = UIFont.boldSystemFont(ofSize: 22.0)
+            header?.textLabel?.textColor = UIColor.red
+        }
     }
 
     
@@ -129,10 +178,16 @@ class DEXAuditViewController: UIViewController, UITableViewDataSource, UITableVi
         self.deviceData?.append(DeviceData(deviceID: "DXS 33", deviceName: "NEC 00033", deviceDescription: "Communication ID 015"))
         self.deviceData?.append(DeviceData(deviceID: "DXS 34", deviceName: "NEC 00034", deviceDescription: "Communication ID 016"))
 
-        
         self.sectionHeaders = ["Section 1", "Section 2", "Section 3", "Section 4"]
         
+        
+        self.rawMessagea = []
+        
+        self.rawMessagea?.append(RawMessage(message: "message one"))
+        self.rawMessagea?.append(RawMessage(message: "Get the new view controller using segue.destination.  Pass the selected object to the new view controller"))
+        self.rawMessagea?.append(RawMessage(message: "message one"))
+        self.rawMessagea?.append(RawMessage(message: "In a storyboard based application, you will often want to do a little preparation before navigation override func prepare(for segue: UIStoryboardSegue, sender: Any"))
+
     }
-    
     
 }
